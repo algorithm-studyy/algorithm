@@ -1,6 +1,6 @@
 function solution(X, Y) {
   let answer = '';
-  for (number of X) {
+  for (const number of X) {
     if (Y.includes(number)) {
       answer += number;
       Y = Y.replace(number, '');
