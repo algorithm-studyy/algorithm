@@ -6,15 +6,12 @@ function solution(k, score) {
     if (day < k) {
       hallOfFame[day] = eachScore;
       min = Math.min(...hallOfFame.filter(Number.isInteger));
-      answer.push(min);
-    } else if (min >= eachScore) {
-      answer.push(min);
-    } else {
+    } else if (min < eachScore) {
       const minIdx = hallOfFame.indexOf(min);
       hallOfFame[minIdx] = eachScore;
       min = Math.min(...hallOfFame);
-      answer.push(min);
     }
+    answer.push(min);
   }
   return answer;
 }
