@@ -9,8 +9,6 @@ function solution(s) {
     if (sameCnt === notSameCnt && i !== s.length - 1) {
       answer++;
       startWord = s[i + 1];
-      sameCnt = 0;
-      notSameCnt = 0;
     }
   }
   return answer;
