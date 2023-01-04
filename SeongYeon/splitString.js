@@ -6,7 +6,7 @@ function solution(s) {
   for (let i = 0; i < s.length; i++) {
     if (s[i] === startWord) sameCnt++;
     else notSameCnt++;
-    if (sameCnt === notSameCnt) {
+    if (sameCnt === notSameCnt && i !== s.length - 1) {
       answer++;
       startWord = s[i + 1];
       sameCnt = 0;
