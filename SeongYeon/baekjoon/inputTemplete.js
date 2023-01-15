@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // 테스트용 파일 경로
-const inputFile = 'input.txt';
+const inputFile = 'test/input.txt';
 
 // 제출용 파일 경로
 const inputFile = '/dev/stdin';
