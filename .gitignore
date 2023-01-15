@@ -183,3 +183,11 @@ fabric.properties
 
 # idea folder, uncomment if you don't need it
 # .idea
+
+# node modules
+node_modules
+package-lock.json
+package.json
+
+# test input file
+input.txt
