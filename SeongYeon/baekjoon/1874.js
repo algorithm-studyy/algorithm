@@ -1,3 +1,4 @@
+// input
 const fs = require('fs');
 const inputFile = '/dev/stdin';
 const input = fs
@@ -9,21 +10,23 @@ const input = fs
   });
 const n = input[0];
 
+// solution
 const stack = [];
 let number = 1;
-let result = [];
+let result = '';
 
 for (let i = 1; i <= n; i++) {
   while (number <= input[i]) {
     stack.push(number);
-    result.push('+');
+    result += '+\n';
     number++;
   }
   if (stack.pop() !== input[i]) {
-    result = ['NO'];
+    result = 'NO';
     break;
   }
-  result.push('-');
+  result += '-\n';
 }
 
-console.log(result.join('\n'));
+// output
+console.log(result);
