@@ -1,4 +1,5 @@
 size = int(input())
+
 stack = []
 num = 0
 answer = []
@@ -11,10 +12,12 @@ for i in range(size):
         num += 1
         stack.append(num)
         answer.append('+')
+        print(answer)
     
     if stack[-1] == x:
         stack.pop()
         answer.append('-')
+        print(answer)
     
     else :
         TF = "NO"
