@@ -1,8 +1,16 @@
 // input
-const input = require('./inputModule.js');
-const n = input[0];
+const fs = require('fs');
+const inputFile = '/dev/stdin';
+const input = fs
+  .readFileSync(inputFile)
+  .toString()
+  .split('\n')
+  .map(function (a) {
+    return +a;
+  });
 
 // solution
+const n = input[0];
 const stack = [];
 let number = 1;
 let result = '';
