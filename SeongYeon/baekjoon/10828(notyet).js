@@ -1,9 +1,9 @@
-const fs = require('fs');
-const inputFile = 'test/input.txt';
-const input = fs.readFileSync(inputFile).toString().split('\n');
+// input
+const input = require('./inputModule.js');
+const n = input[0];
 
-const stack = [];
-let top = -1;
-input.forEach((value) => {
-  console.log(value);
-});
+// solution
+let result = '';
+
+// output
+console.log(result);
