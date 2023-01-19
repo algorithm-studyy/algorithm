@@ -2,10 +2,10 @@ test/input.txt
 
 /dev/stdin
 
-const input = require('fs').readFileSync('test/input.txt').toString();
+const input = require('fs').readFileSync('test/input.txt').toString().trim();
 
-const input = require('fs').readFileSync('test/input.txt').toString().split(' ');
+const input = require('fs').readFileSync('test/input.txt').toString().trim().split(' ');
 
-const input = require('fs').readFileSync('test/input.txt').toString().split('\n');
+const input = require('fs').readFileSync('test/input.txt').toString().trim().split('\n');
 
-const input = require('fs').readFileSync('test/input.txt').toString().split('\n').map((a) => +a);
+const input = require('fs').readFileSync('test/input.txt').toString().trim().split('\n').map((a) => +a);
