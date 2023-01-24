@@ -188,6 +188,7 @@ fabric.properties
 node_modules
 package-lock.json
 package.json
+tsconfig.json
 
 # test input file
 test
