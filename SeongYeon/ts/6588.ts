@@ -13,7 +13,7 @@ const solution = (input: number[]) => {
 
   input.forEach((n) => {
     if (n !== 0) {
-      for (let i = 3; i <= n; i++) {
+      for (let i = 3; i <= n; i += 2) {
         if (!eratos[i] && !eratos[n - i]) {
           result += `${n} = ${i} + ${n - i}\n`;
           break;
