@@ -12,9 +12,8 @@ const solution = (input: number[]) => {
 
 const dfs = (sum: number, n: number) => {
   for (let i = 1; i <= 3; i++) {
-    if (sum > n) return;
-    if (sum === n) {
-      count++;
+    if (sum >= n) {
+      if (sum === n) count++;
       return;
     }
     dfs(sum + i, n);
