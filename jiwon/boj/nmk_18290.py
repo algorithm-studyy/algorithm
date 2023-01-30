@@ -1,25 +1,40 @@
 from sys import stdin
 
-
-def get_two_input():
-    a, b = map(int, stdin.readline().split(" "))
-    return a, b
+answer = 0
 
 
-def dfs(b):
-    if b == m:
-        print(' '.join(print_nums))
+def get_three_input():
+    a, b, c = map(int, stdin.readline().split(" "))
+    return a, b, c
+
+
+def is_adjacency(i, j):
+    wasd = [[1, 0], [-1, 0], [0, -1], [0, 1], [0, 0]]
+    for p in prev:
+        for d in wasd:
+            if p[0] + d[0] == i and p[1] + d[1] == j:
+                return True
+    return False
+
+
+def dfs(a, b, c, s):
+    global answer
+    if c == k:
+        answer = s if answer < s else answer
         return
-    for i in range(len(nums)):
-        if b > 0 and int(print_nums[b - 1]) > nums[i]:
-            continue
-        print_nums[b] = str(nums[i])
-        dfs(b + 1)
+    for i in range(a, len(nums)):
+        for j in range(b, len(nums[i])):
+            if is_adjacency(i, j):
+                continue
+            prev.append([i, j])
+            ab = a + b
+            dfs(ab // n, ab % m, c + 1, nums[i][j] + s)
+            prev.pop()
 
 
 if __name__ == '__main__':
-    n, m = get_two_input()
-    nums = list(map(int, stdin.readline().split(" ")))
-    nums.sort()
-    print_nums = ['0' for _ in range(m)]
-    dfs(0)
+    n, m, k = get_three_input()
+    nums = list(list(map(int, stdin.readline().split(" "))) for _ in range(n))
+    prev = []
+    dfs(0, 0, 0, 0)
+    print(answer)
