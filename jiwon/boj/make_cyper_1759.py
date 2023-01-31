@@ -14,18 +14,13 @@ def dfs(a, b):
             print(print_str)
         return
     for i in range(a, c):
-        if checks[i]:
-            continue
-        checks[i] = True
         print_arr[b] = s[i]
         dfs(i + 1, b + 1)
-        checks[i] = False
 
 
 if __name__ == '__main__':
     l, c = map(int, stdin.readline().split(" "))
     s = list(stdin.readline().strip().split(" "))
-    checks = [False for _ in range(c)]
     s.sort()
     print_arr = ['0' for _ in range(l)]
     dfs(0, 0)
