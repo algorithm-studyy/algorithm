@@ -8,31 +8,25 @@ const input: string[] = require('fs')
 // variable
 const n: number = Number(input[0]);
 const nums: number[] = input[1]!.split(' ').map((a: string) => +a);
-const resultNums: number[] = new Array(n);
 const visited: boolean[] = new Array(n).fill(false);
 let max: number = 0;
 
 // solution
-const dfs = (depth: number) => {
+const dfs = (depth: number, prevNum: number, sum: number) => {
   if (depth === n) {
-    let result: number = 0;
-    for (let i = 1; i < n; i++) {
-      result += Math.abs(resultNums[i - 1]! - resultNums[i]!);
-    }
-    if (result > max) max = result;
+    if (max < sum) max = sum;
     return;
   }
   for (let i = 0; i < n; i++) {
     if (visited[i]) continue;
-
-    resultNums[depth] = nums[i]!;
     visited[i] = true;
-    dfs(depth + 1);
+    if (depth === 0) dfs(depth + 1, nums[i]!, sum);
+    else dfs(depth + 1, nums[i]!, sum + Math.abs(prevNum - nums[i]!));
     visited[i] = false;
   }
 };
 
-dfs(0);
+dfs(0, 0, 0);
 
 // output
 console.log(max);
