@@ -11,7 +11,7 @@ def dfs(a, start, s):
         answer = answer if answer < s or b[start][a[0]] == 0 else s
         return
     for end in range(m):
-        if c[end] or (a and b[start][end] == 0):
+        if c[end] or (a and b[start][end] == 0) or s + b[start][end] > answer:
             continue
         c[end] = True
         a.append(end)
