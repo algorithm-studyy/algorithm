@@ -189,4 +189,4 @@ node_modules
 package-lock.json
 
 # test input file
-test
+input.txt
