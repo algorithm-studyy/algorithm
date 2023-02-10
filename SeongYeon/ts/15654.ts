@@ -1,19 +1,19 @@
 // input
 const input: string[] = require('fs')
-  .readFileSync('test/input.txt')
+  .readFileSync(process.platform === 'linux' ? '/dev/stdin' : './input.txt')
   .toString()
   .trim()
   .split('\n');
 
 // variable
 let result = '';
-const [n, m] = input[0]!.split(' ').map((a: string) => +a);
-const inputList = input[1]!
+const [n, m] = input[0]!.split(' ').map(Number);
+const inputList: number[] = input[1]!
   .split(' ')
-  .map((a: string) => +a)
-  .sort();
+  .map(Number)
+  .sort((a, b) => a - b);
 const nums: number[] = new Array(m);
-const visited: boolean[] = new Array(m);
+const visited: boolean[] = new Array(n);
 
 // solution
 const dfs = (depth: number) => {
