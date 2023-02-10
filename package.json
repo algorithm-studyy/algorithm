@@ -4,5 +4,8 @@
   },
   "scripts": {
     "test": "ts-node SeongYeon/ts/index.ts"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
   }
 }
