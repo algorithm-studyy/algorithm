@@ -11,7 +11,7 @@ const nums: number[] = input[1]!.split(' ').map((a: string) => +a);
 let result: number = 0;
 
 // solution
-for (let i = 1; i < 1 << n!; i++) {
+for (let i = 1 << n!; i > 0; i--) {
   let sum: number = 0;
   for (let j = 0; j < n!; j++) {
     if (i & (1 << j)) sum += nums[j]!;
