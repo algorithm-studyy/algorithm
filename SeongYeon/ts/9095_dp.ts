@@ -9,11 +9,12 @@ const input: number[] = require('fs')
 // variable
 let result: string = '';
 let dp: number[] = [0, 1, 2, 4];
+
+// solution
 for (let i = 4; i <= 11; i++) {
   dp[i] = dp[i - 1]! + dp[i - 2]! + dp[i - 3]!;
 }
 
-// solution
 input.forEach((n, idx) => {
   if (idx !== 0) result += dp[n] + '\n';
 });
