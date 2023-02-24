@@ -1,5 +1,4 @@
-n,m = map(int,input().split())
-
+n, m = map(int,input().split())
 stack = []
 
 
@@ -9,8 +8,8 @@ def dfs():
             stack.append(i)
             dfs()
             stack.pop()
-    if len(stack)==m:
-        print(' '.join(map(str,stack)))
+    if len(stack) == m:
+        print(' '.join(map(str, stack)))
 
 
 dfs()
