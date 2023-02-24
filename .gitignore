@@ -183,4 +183,14 @@ fabric.properties
 
 # idea folder, uncomment if you don't need it
 # .idea
+<<<<<<< HEAD
 JiHwan/circular_queue.py
+=======
+
+# node modules
+node_modules
+package-lock.json
+
+# test input file
+input.txt
+>>>>>>> 4b8c62c4800c5aee4a128228e590febf905e5d15
