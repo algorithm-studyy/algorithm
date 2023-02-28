@@ -1,22 +1,13 @@
-n, m = map(int, input().split())
-
-stack = []
-arr = []
-
-for i in range(n):
-    k = input()
-    arr.append(k)
-
-
-def dfs(arr):
-    if len(stack) == m:
-        print(' '.join(map(str, stack)))
+def dfs(idx, cnt, nums, m, path):
+    if cnt == m:
+        print(' '.join(path))
         return
 
-    for i in range(1, n+1):
-        stack.append(i)
-        dfs(arr)
-        stack.pop()
+    for i in range(idx, len(nums)):
+        dfs(i+1, cnt+1, nums, m, path+[nums[i]])
 
+n, m = map(int, input().split())
+nums = input().split()
+nums.sort()
 
-dfs(arr)
+dfs(0, 0, nums, m, [])
