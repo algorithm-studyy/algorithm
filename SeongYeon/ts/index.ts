@@ -19,10 +19,8 @@ const dp: number[] = new Array(n + 1).fill(0);
 
 // solution
 for (let i = 1; i <= n; i++) {
-  if (tList[i] === 1) dp[i] = dp[i - 1]! + pList[i]!;
-  else dp[i] = dp[i - 1]!;
-
-  for (let j = i - 1; j >= 1; j--) {
+  dp[i] = dp[i - 1]!;
+  for (let j = i; j >= 1; j--) {
     if (tList[j]! + j - 1 === i)
       dp[i] = Math.max(dp[i]!, pList[j]! + dp[j - 1]!);
   }
