@@ -9,8 +9,8 @@ const n: number = Number(input);
 const dp: number[] = [0, 3, 7];
 
 // solution
-for (let i = 2; i < n; i++) {
-  dp[i + 1] = (dp[i - 1]! * 3 + (dp[i]! - dp[i - 1]!) * 2) % 9901;
+for (let i = 3; i <= n; i++) {
+  dp[i] = (dp[i - 1] * 2 + dp[i - 2]) % 9901;
 }
 
 // output
