@@ -1,6 +1,6 @@
 import sys
 
-a = [True] * (1000001)
+a = [True] * 1000001
 
 for i in range(2, 1001):
     if a[i]:
@@ -9,7 +9,8 @@ for i in range(2, 1001):
 
 while True:
     n = int(sys.stdin.readline())
-    if n == 0: break
+    if n == 0:
+        break
 
     for i in range(3, len(a)):
         if a[i] and a[n - i]:
