@@ -8,4 +8,5 @@ for i in range(1, N+1):
         dp[i] = min(dp[i], dp[i-k] + p[k])
 
 
+
 print(dp[N])
