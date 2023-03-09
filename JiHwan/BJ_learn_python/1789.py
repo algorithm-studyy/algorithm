@@ -1,12 +1,16 @@
-import sys
+def solution():
+    answer = 0
+    arr.sort(reverse=True)
+    for i in range(N):
+        arr[i] = arr[i] * (i + 1)
 
-S = int(sys.stdin.readline())
-total = 0
-count = 0
 
-while True:
-    count += 1
-    total += count
-    if total > S:
-        break
-print(count-1)
+    return max(arr)
+
+
+N = int(input())
+arr = []
+for _ in range(N):
+    arr.append(int(input()))
+
+print(solution())
