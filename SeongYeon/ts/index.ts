@@ -6,9 +6,8 @@ const input: string[] = require('fs')
   .split('\n');
 
 // variable
-let result = '';
 
 // solution
 
 // output
-console.log(result);
+console.log();
