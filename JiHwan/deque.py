@@ -6,7 +6,7 @@ a_list =deque()
 
 for i in range(size) : 
     order = sys.stdin.readline().split()
-
+    # 테스트
     if order[0]=="push_back":
         a_list.append(order[1])
         #print(a_list)
