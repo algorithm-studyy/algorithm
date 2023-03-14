@@ -22,6 +22,8 @@ def dfs(matrix, i, visited):
 
 
 dfs(matrix, v, visited)
+print()
+visited = [False] * (n + 1)
 
 
 def bfs(matrix, i, visited):
