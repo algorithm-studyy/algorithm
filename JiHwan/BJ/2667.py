@@ -7,6 +7,7 @@ dy = [0, 0, -1, 1]
 def bfs(graph, x, y):
     queue = deque()
     queue.append((x, y))
+    graph[x][y] = 0
     count = 1
     while queue:
         x, y = queue.popleft()
@@ -16,8 +17,8 @@ def bfs(graph, x, y):
             if nx < 0 or ny < 0 or nx >= N or ny >= N:
                 continue
             if graph[nx][ny] == 1:
-                graph[nx][ny] = 0
                 queue.append((nx, ny))
+                graph[nx][ny] = 0
                 count += 1
 
     return count
