@@ -10,4 +10,4 @@ const input: string[] = require('fs')
 // solution
 
 // output
-console.log();
+console.log('test');
