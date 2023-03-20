@@ -1,36 +1,53 @@
-class queue<T> {
-  queue: T[];
+interface IQueue<T> {
+  queue: (T | undefined)[];
+  length: number;
+  head: number;
+  tail: number;
+
+  push(element: T): void;
+  popLeft(): T;
+  isFull(): boolean;
+  isEmpty(): boolean;
+  show(): void;
+}
+
+class Queue<T> implements IQueue<T> {
+  queue: (T | undefined)[];
   length: number;
   head: number;
   tail: number;
 
   constructor(length: number) {
-    this.queue = new Array(length);
+    this.queue = new Array(length).fill(undefined);
     this.length = length;
     this.head = 0;
     this.tail = 0;
   }
 
-  enqueue(element: T): Error | undefined {
-    if (this.isFull()) return new Error('queue is full!');
+  push(element: T) {
+    if (this.isFull()) throw new Error('queue is full!');
     this.queue[this.tail] = element;
     this.tail = (this.tail + 1) % this.length;
-    return;
   }
 
-  dequeue(): T | Error {
-    if (this.isEmpty()) return new Error('queue is empty!');
+  popLeft(): T {
+    if (this.isEmpty()) throw new Error('queue is empty!');
     const value: T = this.queue[this.head]!;
+    this.queue[this.head] = undefined;
     this.head = (this.head + 1) % this.length;
     return value;
   }
 
   isFull(): boolean {
-    return false;
+    return this.head === this.tail && this.queue[this.tail] !== undefined;
   }
 
   isEmpty(): boolean {
-    return this.head === this.tail;
+    return this.queue[this.head] === undefined;
+  }
+
+  show() {
+    console.log(this.queue);
   }
 }
 
@@ -45,10 +62,7 @@ const input: string[] = require('fs')
 const numOfVertex: number = Number(input[0]![0]);
 const graph: { [key: number]: number[] } = {};
 const visited: boolean[] = new Array(numOfVertex + 1).fill(false);
-let willVisit: number[] = new Array(numOfVertex);
-
-let head = 0;
-let tail = 0;
+const queue = new Queue<number>(numOfVertex);
 let res = 0;
 
 for (let i = 1; i < input.length; i++) {
@@ -66,20 +80,17 @@ const bfs = (startNode: number) => {
   if (graph[startNode]) {
     graph[startNode]!.forEach((node) => {
       if (!visited[node]) {
-        willVisit[tail] = node;
-        tail = (tail + 1) % numOfVertex;
+        queue.push(node);
       }
     });
   }
 
-  while (head !== tail) {
-    const nextNode: number = willVisit[head]!;
-    head = (head + 1) % numOfVertex;
+  while (!queue.isEmpty()) {
+    const nextNode = queue.popLeft();
     visited[nextNode] = true;
     graph[nextNode]!.forEach((node) => {
       if (!visited[node]) {
-        willVisit[tail] = node;
-        tail = (tail + 1) % numOfVertex;
+        queue.push(node);
       }
     });
   }
