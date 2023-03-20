@@ -10,4 +10,4 @@ const input: string[] = require('fs')
 // solution
 
 // output
-console.log('test');
+console.log('깃허브 확장프로그램 테스트');
