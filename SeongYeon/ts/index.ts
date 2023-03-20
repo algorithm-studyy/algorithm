@@ -1,3 +1,39 @@
+class queue<T> {
+  queue: T[];
+  length: number;
+  head: number;
+  tail: number;
+
+  constructor(length: number) {
+    this.queue = new Array(length);
+    this.length = length;
+    this.head = 0;
+    this.tail = 0;
+  }
+
+  enqueue(element: T): Error | undefined {
+    if (this.isFull()) return new Error('queue is full!');
+    this.queue[this.tail] = element;
+    this.tail = (this.tail + 1) % this.length;
+    return;
+  }
+
+  dequeue(): T | Error {
+    if (this.isEmpty()) return new Error('queue is empty!');
+    const value: T = this.queue[this.head]!;
+    this.head = (this.head + 1) % this.length;
+    return value;
+  }
+
+  isFull(): boolean {
+    return false;
+  }
+
+  isEmpty(): boolean {
+    return this.head === this.tail;
+  }
+}
+
 // input
 const input: string[] = require('fs')
   .readFileSync(process.platform === 'linux' ? '/dev/stdin' : './input.txt')
