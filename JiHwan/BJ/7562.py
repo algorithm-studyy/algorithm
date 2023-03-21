@@ -12,7 +12,7 @@ def bfs():
     while queue:
         x, y = queue.popleft()
         if x == eX and y == eY:
-            return graph[x][y]
+            return graph[x][y] - 1
         for i in range(8):
             nx = x + dx[i]
             ny = y + dy[i]
