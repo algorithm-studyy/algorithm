@@ -1,11 +1,12 @@
+// Queue
 interface IQueue<T> {
   queue: (T | undefined)[];
   length: number;
   head: number;
   tail: number;
 
-  push(element: T): void;
-  popLeft(): T;
+  enqueue(element: T): void;
+  dequeue(): T;
   isFull(): boolean;
   isEmpty(): boolean;
   show(): void;
@@ -24,13 +25,13 @@ class Queue<T> implements IQueue<T> {
     this.tail = 0;
   }
 
-  push(element: T) {
+  enqueue(element: T) {
     if (this.isFull()) throw new Error('queue is full!');
     this.queue[this.tail] = element;
     this.tail = (this.tail + 1) % this.length;
   }
 
-  popLeft(): T {
+  dequeue(): T {
     if (this.isEmpty()) throw new Error('queue is empty!');
     const value: T = this.queue[this.head]!;
     this.queue[this.head] = undefined;
@@ -80,17 +81,17 @@ const bfs = (startNode: number) => {
   if (graph[startNode]) {
     graph[startNode]!.forEach((node) => {
       if (!visited[node]) {
-        queue.push(node);
+        queue.enqueue(node);
       }
     });
   }
 
   while (!queue.isEmpty()) {
-    const nextNode = queue.popLeft();
+    const nextNode = queue.dequeue();
     visited[nextNode] = true;
     graph[nextNode]!.forEach((node) => {
       if (!visited[node]) {
-        queue.push(node);
+        queue.enqueue(node);
       }
     });
   }
