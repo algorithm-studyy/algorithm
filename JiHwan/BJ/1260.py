@@ -16,9 +16,9 @@ def dfs(matrix, i, visited):
         if not visited[value]:
             print(value, end=' ')
             visited[value] = True
-        for c in range(len(matrix[value]) - 1, -1, -1):
-            if matrix[value][c] == 1 and not visited[c]:
-                stack.append(c)
+        for k in range(len(matrix[value]) - 1, -1, -1):
+            if matrix[value][k] == 1 and not visited[k]:
+                stack.append(k)
 
 
 dfs(matrix, v, visited)
@@ -34,9 +34,9 @@ def bfs(matrix, i, visited):
         if not visited[value]:
             print(value, end=' ')
             visited[value] = True
-            for c in range(len(matrix[value])):
-                if matrix[value][c] == 1 and not visited[c]:
-                    queue.append(c)
+            for k in range(len(matrix[value])):
+                if matrix[value][k] == 1 and not visited[k]:
+                    queue.append(k)
 
 
 bfs(matrix, v, visited)
