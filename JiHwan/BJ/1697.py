@@ -12,13 +12,14 @@ def bfs():
             print(graph[x])
             break
         for nx in direction:
-            if 0 <= nx <= K and not graph[nx]:
+            if 0 <= nx <= max_size and not graph[nx]:
                 graph[nx] = graph[x] + 1
                 queue.append(nx)
 
 
 if __name__ == "__main__":
     N, K = map(int, input().split())
-    graph = [0] * (K+1)
+    max_size = 100000
+    graph = [0] * (max_size+1)
     bfs()
 
