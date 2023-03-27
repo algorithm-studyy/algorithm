@@ -5,41 +5,53 @@ const input: string[] = require('fs')
   .split('\n');
 
 // variable
-const [n, m] = input[0]!.split(' ').map(Number);
-const edges: string[] = input.slice(1, 1 + m!);
-const graph: number[][] = Array.from(Array(n! + 1), () => new Array());
-const visited: boolean[] = Array(n! + 1).fill(false);
-let answer: number = 0;
-
-edges.forEach((row) => {
-  const [a, b] = row.split(' ').map(Number);
-  graph[a!]!.push(b!);
-  graph[b!]!.push(a!);
-});
+const n: number = Number(input[0]!);
+const map: string[][] = Array.from(input.slice(1, 1 + n), (row) =>
+  row.split('')
+);
+const visited: boolean[][] = Array.from(Array(n), () =>
+  new Array(n).fill(false)
+);
+const move: number[][] = [
+  [1, 0],
+  [-1, 0],
+  [0, 1],
+  [0, -1],
+];
+const groupCount: number[] = [];
+let numOfGroup: number = 0;
 
 // solution
-const bfs = (startNode: number) => {
-  const queue = [startNode];
+const bfs = (startX: number, startY: number) => {
+  const queue: number[][] = [[startX, startY]];
 
-  while (queue.length > 0) {
-    const nextNode: number = queue.shift()!;
+  while (queue.length !== 0) {
+    const [x, y] = queue.shift()!;
+    groupCount[numOfGroup]++;
 
-    graph[nextNode]!.forEach((node) => {
-      if (!visited[node]) {
-        visited[node] = true;
-        queue.push(node);
+    move.forEach((xy) => {
+      const nextX = x! + xy[0]!;
+      const nextY = y! + xy[1]!;
+      if (nextX < 0 || nextX >= n || nextY < 0 || nextY >= n) return;
+      if (map[nextX]![nextY] === '1' && !visited[nextX]![nextY]) {
+        queue.push([nextX, nextY]);
+        visited[nextX]![nextY] = true;
       }
     });
   }
 };
 
-for (let i = 1; i <= n!; i++) {
-  if (!visited[i]) {
-    visited[i] = true;
-    bfs(i);
-    answer++;
-  }
-}
+map.forEach((row, i) => {
+  row.forEach((item, j) => {
+    if (item === '1' && !visited[i]![j]) {
+      visited[i]![j] = true;
+      groupCount[numOfGroup] = 0;
+      bfs(i, j);
+      numOfGroup++;
+    }
+  });
+});
 
 // output
-console.log(answer);
+const res: number[] = [numOfGroup, ...groupCount.sort((a, b) => a - b)];
+console.log(res.join('\n'));
