@@ -14,7 +14,7 @@ def bfs(n):
         if s+c <= n and graph[s+c][c] == 0:
             graph[s+c][c] = graph[s][s] + 1
             queue.append((s+c, c))
-        if
+        if 
 
 
 
