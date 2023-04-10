@@ -1,5 +1,4 @@
 function solution(n, words) {
-  const answer = [0, 0];
   const wordList = [words[0]];
 
   for (let i = 1; i < words.length; i++) {
@@ -10,5 +9,5 @@ function solution(n, words) {
     wordList.push(words[i]);
   }
 
-  return answer;
+  return [0, 0];
 }
