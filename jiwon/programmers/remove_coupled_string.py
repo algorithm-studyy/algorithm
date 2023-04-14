@@ -7,6 +7,7 @@
 
 from collections import deque
 
+
 def solution(s):
     dq = deque(list(s))
     stack = []
