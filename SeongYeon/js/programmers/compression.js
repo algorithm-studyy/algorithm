@@ -6,7 +6,7 @@ function solution(msg) {
   while (start < msg.length) {
     let find = '';
     for (let i = dictionary.length - 1; i > 0; i--) {
-      if (msg.indexOf(dictionary[i], start) === start) {
+      if (msg.substr(start, dictionary[i].length) === dictionary[i]) {
         res.push(i);
         find = dictionary[i];
         start += find.length;
