@@ -1,15 +1,10 @@
 
-from collections import Counter
-
-def solution(k, tangerine):
-    counter = Counter(tangerine)
-    print(counter)
-    tangerine.sort(key = lambda t: (-counter[t], t))
-    print(tangerine)
-    print(tangerine[:k])
-    print(set(tangerine))
-    print(set(tangerine[:k]))
-    return len(set(tangerine[:k]))
+def solution(citations):
+    citations.sort(reverse=True)
+    temp = map(min, enumerate(citations, start=1))
+    print(list(temp))
+    answer = max(map(min, enumerate(citations, start=1)))
+    return answer
 
 
-solution(6, 	[1, 3, 2, 5, 4, 5, 2, 3])
+print(solution([3, 0, 6, 1, 5]))
