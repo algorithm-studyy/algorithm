@@ -1,9 +1,8 @@
 function solution(dirs) {
   const move = { U: [-1, 0], D: [1, 0], L: [0, -1], R: [0, 1] };
-  const passed = [];
-  let row = 5,
-    col = 5,
-    res = 0;
+  const passed = new Set();
+  let row = 0,
+    col = 0;
 
   for (dir of dirs) {
     const prevRow = row;
@@ -12,20 +11,15 @@ function solution(dirs) {
     row += move[dir][0];
     col += move[dir][1];
 
-    if (row < 0 || row > 10 || col < 0 || col > 10) {
+    if (row < -5 || row > 5 || col < -5 || col > 5) {
       row = prevRow;
       col = prevCol;
       continue;
     }
 
-    const path = `${prevRow}${prevCol}-${row}${col}`;
-    const revPath = `${row}${col}-${prevRow}${prevCol}`;
-
-    if (!passed.includes(path) && !passed.includes(revPath)) {
-      res++;
-      passed.push(path);
-    }
+    passed.add(`${prevRow}${prevCol}-${row}${col}`);
+    passed.add(`${row}${col}-${prevRow}${prevCol}`);
   }
 
-  return res;
+  return passed.size / 2;
 }
