@@ -1,4 +1,10 @@
-test = {1: {2: True}}
-print(test)
 
-print(test.get(1).get(3))
+def solution(citations):
+    citations.sort(reverse=True)
+    temp = map(min, enumerate(citations, start=1))
+    print(list(temp))
+    answer = max(map(min, enumerate(citations, start=1)))
+    return answer
+
+
+print(solution([3, 0, 6, 1, 5]))
