@@ -6,9 +6,9 @@ from collections import Counter
 
 def solution(want, number, discount):
     answer = 0
-    total = {}
-    for w, n in zip(want, number):
-        total[w] = n
+    total = dict()
+    for i in range(len(want)):
+        total[want[i]] = number[i]
 
     for i in range(len(discount)):
         count = Counter(discount[i:i + 10])
