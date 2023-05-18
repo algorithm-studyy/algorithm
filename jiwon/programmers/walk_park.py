@@ -29,7 +29,7 @@ def solution(park, routes):
         ny, nx = y + dy * int(size), x + dx * int(size)
         if ny < 0 or ny >= len(park) or nx < 0 or nx >= len(park[0]):
             continue
-        if is_blocked_x(y, x, nx, park) or is_blocked_y(x, y, ny, park):
+        if is_blocked_x(y, min(x, nx), max(x, nx), park) or is_blocked_y(x, min(y, ny), max(y, ny), park):
             continue
         x, y = nx, ny
     return [y, x]
