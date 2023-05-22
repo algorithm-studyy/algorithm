@@ -23,6 +23,13 @@ def room(place):
                     if place[r1 + 1][c1] == 'O':
                         return 0
                 else:
+                    if r1 < r2:
+                        if not (place[r1][c2] == 'X' and place[r2][c1] == 'X'):
+                            return 0
+                    if c1 < c2:
+                        if not (place[r1][c2] == 'X' and place[r2][c1] == 'X'):
+                            return 0
+        return 1
 
 
 def solution(places):
