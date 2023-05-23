@@ -1,4 +1,4 @@
-route = set()
+from heapq import heappush, heappop
 
 
 def change_graph(road, N):
@@ -9,21 +9,23 @@ def change_graph(road, N):
     return g
 
 
-def dfs(d, s, g, K, v):
-    global route
-    if d > K:
-        return
-    route.add(s)
-    for i in g[s].keys():
-        if not v[i]:
-            dfs(d + g[s][i], i, g, K, v)
-            v[i] = True
-        v[i] = False
+def dijikstra(start, g, K):
+    d = [1e9 for _ in range(len(g))]
+    d[start] = 0
+    q = []
+    heappush(q, [0, start])
+    while q:
+        distance, end = heappop(q)
+        if distance > d[end]:
+            continue
+        for new_end, new_distance in g[end].items():
+            another_distance = new_distance + distance
+            if another_distance < d[new_end]:
+                d[new_end] = another_distance
+                heappush(q, [another_distance, new_end])
+    return sum([1 for v in d if v <= K])
 
 
 def solution(N, road, K):
-    global route
     g = change_graph(road, N)
-    v = [False for _ in range(N + 1)]
-    dfs(0, 1, g, K, v)
-    return len(route)
+    return dijikstra(1, g, K)
