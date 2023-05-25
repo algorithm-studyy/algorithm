@@ -21,8 +21,9 @@ function solution(users, emoticons) {
       if (price >= user[1]) tempAnswer[0]++;
       else tempAnswer[1] += price;
     });
-    if (tempAnswer[0] >= answer[0] && tempAnswer[1] >= answer[1])
-      answer = [...tempAnswer];
+    if (tempAnswer[0] > answer[0]) answer = [...tempAnswer];
+    else if (tempAnswer[0] === answer[0] && tempAnswer[1] > answer[1])
+      answer[1] = tempAnswer[1];
   });
 
   return answer;
