@@ -50,9 +50,7 @@ function solution(n, apeachInfo) {
     rionInfo[idx] -= 1;
   };
 
-  for (let i = 0; i < 11; i++) {
-    getRionScore(i, 0, apeachStartScore, 0);
-  }
+  getRionScore(i, 0, apeachStartScore, 0);
 
   return answer.some((item) => item > 0) ? answer : [-1];
 }
