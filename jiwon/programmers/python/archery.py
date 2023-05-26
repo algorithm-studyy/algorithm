@@ -40,6 +40,3 @@ def dfs(d, lion, apeach, n, start):
 def solution(n, info):
     dfs(0, [0 for _ in range(11)], info, n, 0)
     return answer[:-1] if answer[-1] != 0 else [-1]
-
-
-print(solution(9, [0, 0, 1, 2, 0, 1, 1, 1, 1, 1, 1]))
