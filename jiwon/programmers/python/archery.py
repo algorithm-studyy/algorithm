@@ -1,4 +1,5 @@
-answer = [0]
+from collections import defaultdict
+lions = defaultdict(list)
 
 
 # 뒤부터 분배 모든 경우의 수.
@@ -15,19 +16,12 @@ def get_score_diff(lion, apeach):
     return lion_score - apeach_score
 
 
-def is_get_more_lower_score(lion):
-    for i in range(10, -1, -1):
-        if lion[i] > answer[i]:
-            return True
-    return False
-
-
 def dfs(d, lion, apeach, n, start):
-    global answer
+    global lions
     if d == n:
         score = get_score_diff(lion, apeach)
-        answer = lion + [score] if score > answer[-1] else answer
-        answer = lion + [score] if score == answer[-1] and is_get_more_lower_score(lion) else answer
+        if score > 0:
+            lions[score].append(lion.copy())
         return
     for i in range(start, 11):
         if lion[i] > apeach[i]:
@@ -39,7 +33,8 @@ def dfs(d, lion, apeach, n, start):
 
 def solution(n, info):
     dfs(0, [0 for _ in range(11)], info, n, 0)
-    return answer[:-1] if answer[-1] != 0 else [-1]
-
-
-print(solution(9, [0, 0, 1, 2, 0, 1, 1, 1, 1, 1, 1]))
+    if not lions:
+        return [-1]
+    answer = lions[max(lions.keys())]
+    answer = sorted(answer, key=lambda x: tuple(x[i] for i in range(10, -1, -1)), reverse=True)[0]
+    return answer
