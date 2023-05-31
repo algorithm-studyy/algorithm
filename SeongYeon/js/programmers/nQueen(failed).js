@@ -8,8 +8,9 @@ function solution(n) {
       return;
     }
     if (x === n) return;
-    if (y === n) dfs(x + 1, 0);
-    else {
+    if (y === n) {
+      dfs(x + 1, 0);
+    } else {
       let isOk = true;
       for (let queen of queens) {
         if (
@@ -27,11 +28,9 @@ function solution(n) {
       if (isOk) queens.pop();
     }
   };
-  //
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      dfs(i, j);
-    }
+
+  for (let j = 0; j < n; j++) {
+    dfs(0, j);
   }
 
   return answer;
