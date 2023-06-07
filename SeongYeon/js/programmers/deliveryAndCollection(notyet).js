@@ -1,22 +1,48 @@
 function solution(cap, n, deliveries, pickups) {
-  let needToGo = 0;
+  let deliverIdx = -1;
+  let pickupIdx = -1;
   let answer = 0;
 
   for (let i in deliveries) {
-    if (deliveries[n - i - 1] !== 0 || pickups[n - i - 1] !== 0) {
-      needToGo = n - i;
+    if (deliveries[n - i - 1] !== 0) {
+      deliverIdx = n - i - 1;
       break;
     }
   }
 
-  while (needToGo > 0) {
+  for (let i in pickups) {
+    if (pickups[n - i - 1] !== 0) {
+      pickupIdx = n - i - 1;
+      break;
+    }
+  }
+
+  while (deliverIdx >= 0 || pickupIdx >= 0) {
     let deliverCap = cap;
     let pickupCap = cap;
 
-    answer += needToGo * 2;
+    answer += (Math.max(deliverIdx, pickupIdx) + 1) * 2;
 
-    for (let i = needToGo - 1; i >= 0; i--) {
-      if (deliverCap === 0 && pickupCap === 0) break;
+    while (deliverIdx >= 0 && deliverCap !== 0) {
+      if (deliveries[deliverIdx] > deliverCap) {
+        deliveries[deliverIdx] -= deliverCap;
+        deliverCap = 0;
+      } else {
+        deliverCap -= deliveries[deliverIdx];
+        deliveries[deliverIdx] = 0;
+        deliverIdx -= 1;
+      }
+    }
+
+    while (pickupIdx >= 0 && pickupCap !== 0) {
+      if (pickups[pickupIdx] > pickupCap) {
+        pickups[pickupIdx] -= pickupCap;
+        pickupCap = 0;
+      } else {
+        pickupCap -= pickups[pickupIdx];
+        pickups[pickupIdx] = 0;
+        pickupIdx -= 1;
+      }
     }
   }
 
