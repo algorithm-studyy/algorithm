@@ -21,6 +21,14 @@ function solution(cap, n, deliveries, pickups) {
     let deliverCap = cap;
     let pickupCap = cap;
 
+    while (deliveries[deliverIdx] === 0) {
+      deliverIdx--;
+    }
+
+    while (pickups[pickupIdx] === 0) {
+      pickupIdx--;
+    }
+
     answer += (Math.max(deliverIdx, pickupIdx) + 1) * 2;
 
     while (deliverIdx >= 0 && deliverCap !== 0) {
