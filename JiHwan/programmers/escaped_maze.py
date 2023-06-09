@@ -22,6 +22,20 @@ def bfs(start, end, maps):
                 visited[i][j] = True
 
     while q:
+        x, y = q.popleft()
+
+        if map[x][y] == end:
+            return count
+
+        for i in range(x):
+            nx = i + dx[i]
+            ny = i + dy[i]
+
+            if 0 < nx < m and 0 < ny < n and maps[i][j] != 'X':
+                q.append((i, j))
+                count += 1
+                visited[nx][ny] = True
+    return -1
 
 
 def solution(maps):
