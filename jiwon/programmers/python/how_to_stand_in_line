@@ -1,0 +1,17 @@
+# pop
+
+from math import factorial
+
+def solution(n, k):
+    answer = []
+    arr = [i + 1 for i in range(n)]
+    for _ in range(n):
+        fn = factorial(n)
+        p = fn // n
+        i = k // p
+        k = k % p if p > 0 else k
+        answer.append(arr.pop(i))
+        n -= 1
+        print(answer, arr, i, fn, k, p, n)
+        
+    return answer
