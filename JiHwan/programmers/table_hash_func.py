@@ -1,5 +1,5 @@
 def solution(data, col, row_begin, row_end):
-    answer = 0
+    result = 0
 
     data = sorted(data, key=lambda x: [x[col - 1], -x[0]])
 
@@ -8,6 +8,6 @@ def solution(data, col, row_begin, row_end):
 
         for j in data[i - 1]:
             total += (j % i)
-        answer ^= total
+        result ^= total
 
-    return answer
+    return result
