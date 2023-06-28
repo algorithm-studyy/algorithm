@@ -1,3 +1,4 @@
+#Time:56ms Memory:16.5MB
 class Solution:
     def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
         word = re.sub(r"[^a-zA-Z0-9\s]", ' ', paragraph).lower().split(' ')
