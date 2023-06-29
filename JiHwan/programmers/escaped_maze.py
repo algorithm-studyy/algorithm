@@ -42,6 +42,5 @@ def solution(maps):
     path_to_l = bfs('S', 'L', maps)
     path_to_e = bfs('L', 'E', maps)
 
-    answer = 0
-
-    return answer
+    if path_to_l != -1 and path_to_e != -1:
+        return path_to_l + path_to_e
