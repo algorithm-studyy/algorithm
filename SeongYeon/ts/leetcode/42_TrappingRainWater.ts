@@ -1,3 +1,5 @@
+// Time: 21.57%, Memory: 63.25%
+
 function trap(height: number[]): number {
   let answer = 0;
   let peak = 0;
