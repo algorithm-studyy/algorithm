@@ -1,34 +1,19 @@
-// Time: 21.57%, Memory: 63.25%
-
 function trap(height: number[]): number {
   let answer = 0;
-  let peak = 0;
-  let nextPeak = 0;
-  let isReverse = false;
+  let left = 0;
+  let right = height.length - 1;
+  let leftMax = 0,
+    rightMax = 0;
 
-  for (let i = 0; i < height.length; i++) {
-    if (i >= nextPeak) {
-      peak = nextPeak;
-      let max = 0;
-      let maybePeak = 0;
-      for (let j = i + 1; j < height.length; j++) {
-        if (height[j] >= height[peak]) {
-          nextPeak = j;
-          isReverse = false;
-          break;
-        }
-        if (height[j] > max) {
-          maybePeak = j;
-          max = height[j];
-        }
-      }
-      if (peak === nextPeak) {
-        nextPeak = maybePeak;
-        isReverse = true;
-      }
+  while (left < right) {
+    if (height[left] <= height[right]) {
+      leftMax = Math.max(leftMax, height[left]);
+      answer += leftMax - height[left];
+      left++;
     } else {
-      if (isReverse) answer += height[nextPeak] - height[i];
-      else answer += height[peak] - height[i];
+      rightMax = Math.max(rightMax, height[right]);
+      answer += rightMax - height[right];
+      right--;
     }
   }
 
