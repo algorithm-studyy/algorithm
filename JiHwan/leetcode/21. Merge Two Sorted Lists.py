@@ -14,9 +14,9 @@ class Solution:
             l2.append(list2.val)
             list2 = list2.next
 
-        merged_list = sorted(l1 + l2)  # 리스트를 정렬하여 merged_list에 저장
+        merged_list = sorted(l1 + l2)
 
-        # 정렬된 리스트를 연결 리스트로 변환
+
         head = ListNode()
         current = head
         for value in merged_list:
