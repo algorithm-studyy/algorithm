@@ -1,3 +1,6 @@
+// Runtime: 63ms(Beats 79.89%)
+// Memory: 44.02mb(Beats 80.22%)
+
 function isValid(s: string): boolean {
   const leftBracket = ['(', '{', '['];
   const rightBracket = [')', '}', ']'];
