@@ -1,23 +1,19 @@
-// Runtime: 69ms(Beats 54.00%)
-// Memory: 43.98mb(Beats 82.71%)
+// Runtime: 68ms(Beats 59.24%)
+// Memory: 44.89mb(Beats 43.19%)
 
 function isValid(s: string): boolean {
-  const leftBracket = ['(', '{', '['];
-  const rightBracket = [')', '}', ']'];
   const stack = [];
+  const bracketPair = {
+    ')': '(',
+    '}': '{',
+    ']': '[',
+  };
 
   for (const bracket of s) {
-    if (leftBracket.includes(bracket)) stack.push(bracket);
-    else {
-      const idx = rightBracket.indexOf(bracket);
-      const peak = stack[stack.length - 1];
-
-      if (!peak || peak !== leftBracket[idx]) return false;
-      stack.pop();
-    }
+    if (bracket in bracketPair) {
+      if (!stack.length || stack.pop() !== bracketPair[bracket]) return false;
+    } else stack.push(bracket);
   }
 
-  if (stack.length) return false;
-
-  return true;
+  return !stack.length;
 }
