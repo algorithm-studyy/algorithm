@@ -21,7 +21,7 @@ def is_h(x, y):
 
 def dfs(d, v, x, y):
     global answer
-    if answer == v + max_value + (3 - d):
+    if answer >= v + max_value * (3 - d):
         return
     if d == 3:
         answer = max(answer, v)
