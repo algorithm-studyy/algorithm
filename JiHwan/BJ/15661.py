@@ -1,31 +1,46 @@
 import sys
 
+input = sys.stdin.readline
 
-def dfs(value):
-    global answer
-    hap_1 = 0
-    hap_2 = 0
-    for i in range(n):
-        for j in range(n):
-            if i != j:
-                if not visited[i] and visited[j]:
-                    hap_1 = arr[i][j] + arr[j][i]
-                else:
-                    hap_2 = arr[i][j] + arr[j][i]
-            else:
-                continue
-    answer = min(answer, abs(hap_1 - hap_2))
+n = int(input())
 
-    for i in range(value, n):
-        visited[i] = True
-        dfs(value + 1)
-        visited[i] = False
+matrix = [list(map(int, input().split())) for _ in range(n)]
+
+visited1 = [False] * n
+
+min_value = 100 * 20
 
 
-if __name__ == "__main__":
-    n = int(input())
-    arr = [list(map(int, sys.stdin.readline().split())) for _ in range(int(n))]
-    visited = [False] * n
-    answer = 1e9
-    dfs(0)
-    print(answer)
+def recur(target):
+    if target == n:
+        score()
+        return
+
+    visited1[target] = True
+    recur(target + 1)
+    visited1[target] = False
+    recur(target + 1)
+
+
+def score():
+    global min_value
+
+    start = 0
+    link = 0
+
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+            if visited1[i] and visited1[j]:
+                start += matrix[i][j] + matrix[j][i]
+            elif not visited1[i] and not visited1[j]:
+                link += matrix[i][j] + matrix[j][i]
+
+    diff = abs(start - link)
+
+    if min_value > diff:
+        min_value = diff
+
+
+recur(0)
+
+print(min_value)
