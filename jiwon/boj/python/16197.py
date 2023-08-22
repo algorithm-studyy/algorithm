@@ -29,15 +29,18 @@ def bfs(b, q, n, m, v1, v2):
     while q:
         y1, x1, cnt = q.popleft()
         y2, x2, _ = q.popleft()
-        cnt += 1
-        if cnt > 10:
-            return -1
+        v1[y1][x1] = True
+        v2[y2][x2] = True
+
         for i in range(4):
             ny1, ny2, nx1, nx2 = y1 + dy[i], y2 + dy[i], x1 + dx[i], x2 + dx[i]
             out1, out2 = is_out(n, m, nx1, ny1), is_out(n, m, nx2, ny2)
             if out1 and out2:
                 continue
             elif out1 or out2:
+                cnt += 1
+                if cnt >= 10:
+                    return -1
                 return cnt
             if b[ny1][nx1] == '#':
                 ny1, nx1 = y1, x1
@@ -45,12 +48,8 @@ def bfs(b, q, n, m, v1, v2):
                 ny2, nx2 = y2, x2
             if v1[ny1][nx1] and v2[ny2][nx2]:
                 continue
-
-            v1[ny1][nx1] = True
-            v2[ny2][nx2] = True
-            q.append((ny1, nx1, cnt))
-            q.append((ny2, nx2, cnt))
-            print(y1, x1, ny1, nx1, '/', y2, x2, ny2, nx2, '/', cnt, q)
+            q.append((ny1, nx1, cnt + 1))
+            q.append((ny2, nx2, cnt + 1))
     return -1
 
 
