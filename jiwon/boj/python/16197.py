@@ -39,13 +39,18 @@ def bfs(b, q, n, m, v1, v2):
                 continue
             elif out1 or out2:
                 return cnt
-            if b[ny1][nx1] == '#' or v1[ny1][nx1] or b[ny2][nx2] == '#' or v2[ny2][nx2]:
+            if b[ny1][nx1] == '#':
+                ny1, nx1 = y1, x1
+            if b[ny2][nx2] == '#':
+                ny2, nx2 = y2, x2
+            if v1[ny1][nx1] and v2[ny2][nx2]:
                 continue
+
             v1[ny1][nx1] = True
             v2[ny2][nx2] = True
             q.append((ny1, nx1, cnt))
             q.append((ny2, nx2, cnt))
-            print(ny1, nx1, ny2, nx2, cnt, q)
+            print(y1, x1, ny1, nx1, '/', y2, x2, ny2, nx2, '/', cnt, q)
     return -1
 
 
