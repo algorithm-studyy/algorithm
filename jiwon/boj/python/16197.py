@@ -25,12 +25,11 @@ def find_coins(b, n, m):
     return deque(result)
 
 
-def bfs(b, q, n, m, v1, v2):
+def bfs(b, q, n, m):
     while q:
         y1, x1, cnt = q.popleft()
         y2, x2, _ = q.popleft()
-        cnt += 1
-        if cnt > 10:
+        if cnt >= 10:
             return -1
         for i in range(4):
             ny1, ny2, nx1, nx2 = y1 + dy[i], y2 + dy[i], x1 + dx[i], x2 + dx[i]
@@ -38,27 +37,23 @@ def bfs(b, q, n, m, v1, v2):
             if out1 and out2:
                 continue
             elif out1 or out2:
-                return cnt
-            if b[ny1][nx1] == '#' or v1[ny1][nx1] or b[ny2][nx2] == '#' or v2[ny2][nx2]:
-                continue
-            v1[ny1][nx1] = True
-            v2[ny2][nx2] = True
-            q.append((ny1, nx1, cnt))
-            q.append((ny2, nx2, cnt))
-            print(ny1, nx1, ny2, nx2, cnt, q)
+                return cnt + 1
+            if b[ny1][nx1] == '#':
+                ny1, nx1 = y1, x1
+            if b[ny2][nx2] == '#':
+                ny2, nx2 = y2, x2
+            q.append((ny1, nx1, cnt + 1))
+            q.append((ny2, nx2, cnt + 1))
     return -1
 
 
 def solution():
     n, m = map(int, stdin.readline().split())
     b = [list(stdin.readline()) for _ in range(n)]
-    v1 = [[False] * len(b[0]) for _ in range(len(b))]
-    v2 = [[False] * len(b[0]) for _ in range(len(b))]
-    coins = find_coins(b, n, m)
-    v1[coins[0][0]][coins[0][1]] = True
-    v2[coins[1][0]][coins[1][1]] = True
 
-    print(bfs(b, coins, n, m, v1, v2))
+    coins = find_coins(b, n, m)
+
+    print(bfs(b, coins, n, m))
 
 
 solution()
