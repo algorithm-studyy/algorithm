@@ -8,11 +8,12 @@ dy = [0, 0, 1, -1]
 
 
 def bfs():
-    global count
+
     while coin:
-        x1, y1, x2, y2 = coin.popleft()
-        if count > 10:
+        x1, y1, x2, y2, count = coin.popleft()
+        if count >= 10:
             return -1
+
         for i in range(4):
             nx1 = x1 + dx[i]
             nx2 = x2 + dx[i]
@@ -24,26 +25,26 @@ def bfs():
                     nx1, ny1 = x1, y1
                 if matrix[nx2][ny2] == "#":
                     nx2, ny2 = x2, y2
-                coin.append((nx1, ny1, nx2, ny2))
-                count += 1
+                coin.append((nx1, ny1, nx2, ny2, count + 1))
+
             elif 0 <= nx1 < n and 0 <= ny1 < m:
-                count += 1
+                return count + 1
             elif 0 <= nx2 < n and 0 <= ny2 < m:
-                count += 1
+                return count + 1
             else:
                 continue
-    print(count)
+    return -1
 
 
 if __name__ == "__main__":
     n, m = list(map(int, input().split()))
     matrix = [list(map(str, input().strip())) for _ in range(n)]
     coin = deque()
-    count = 0
+
     temp = []
     for i in range(n):
         for j in range(m):
             if matrix[i][j] == "o":
                 temp.append((i, j))
-    coin.append((temp[0][0], temp[0][1], temp[1][0], temp[1][1]))
+    coin.append((temp[0][0], temp[0][1], temp[1][0], temp[1][1], 0))
     print(bfs())
