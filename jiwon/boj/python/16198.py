@@ -6,12 +6,19 @@
 from sys import stdin
 
 
-def dfs():
+def dfs(arr, val):
+    global answer
+    if len(arr) == 2:
+        answer = max(answer, val)
+        return
+    for idx in range(1, len(arr) - 1):
+        new_arr = arr.copy()
+        new_arr.pop(idx)
+        dfs(new_arr, val + arr[idx - 1] * arr[idx + 1])
 
 
-
-def solution():
-    n = int(stdin.readline())
-    ws = list(map(int, stdin.readline().split()))
-    for i in range(1, len(ws) - 1):
-        dfs()
+n = int(stdin.readline())
+ws = list(map(int, stdin.readline().split()))
+answer = 0
+dfs(ws, 0)
+print(answer)
