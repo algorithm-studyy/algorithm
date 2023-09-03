@@ -1,63 +1,44 @@
-from sys import stdin
-
-
-def is_same_row(x, y):
+def row(a, n): # 가로
     for i in range(9):
-        if i == x:
-            continue
-        if b[y][x] == b[y][i]:
-            return True
-    return False
+        if n == sudoku[a][i]: # 이미 있으면
+            return False
+    return True
 
 
-def is_same_column(x, y):
+def column(a, n): # 세로
     for i in range(9):
-        if i == y:
-            continue
-        if b[y][x] == b[i][x]:
-            return True
-    return False
+        if n == sudoku[i][a]: # 이미 있으면
+            return False
+    return True
 
 
-def is_same_value_in_block(x, y):
-    start_x, end_x = (x // 3) * 3, (x // 3 + 1) * 3
-    start_y, end_y = (y // 3) * 3, (y // 3 + 1) * 3
-    print(start_y, end_y, start_x, end_x, y, x)
-    for i in range(start_y, end_y):
-        for j in range(start_x, end_x):
-            if i == x and j == y:
-                continue
-            if b[i][j] == b[y][x]:
-                return True
-    return False
+def square(y, x, n): # 3x3 칸
+    for i in range(3):
+        for j in range(3):
+            if n == sudoku[y//3 * 3 + i][x//3 * 3 + j]: # 칸내에 이미 있으면
+                return False
+    return True
 
 
-def find_zero():
-    result = []
-    for i in range(9):
-        for j in range(9):
-            if b[i][j] == 0:
-                result.append((i, j))
-    return result
+def find(n):
+    if n == len(blank): # 빈 공간 만큼 사용했으면
+        for i in sudoku: # 출력 후
+            print(*i) 
+        exit() # 강제 종료
 
+    for i in range(1,10):
+        y = blank[n][0]
+        x = blank[n][1]
+        if column(x,i) and row(y,i) and square(y, x, i):
+            sudoku[y][x] = i
+            find(n+1)
+            sudoku[y][x] = 0
 
-def dfs(d):
-    if d == n:
-        for row in b:
-            print(*row)
-        exit(0)
-    for idx in range(d, n):
-        y, x = zeros[idx]
-        for i in range(1, 10):
-            b[y][x] = i
-            if is_same_row(x, y) or is_same_column(x, y) or is_same_value_in_block(x, y):
-                continue
-            dfs(d + 1)
-            b[y][x] = 0
-
-
-b = [list(map(int, stdin.readline().split())) for _ in range(9)]
-zeros = find_zero()
-n = len(zeros)
-print(n)
-dfs(0)
+import sys
+sudoku = [list(map(int,sys.stdin.readline().split())) for _ in range(9)]
+blank = []
+for i in range(9):
+    for j in range(9):
+        if sudoku[i][j] == 0:
+            blank.append([i,j])
+find(0)
