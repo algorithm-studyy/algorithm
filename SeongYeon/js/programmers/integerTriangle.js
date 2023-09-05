@@ -1,18 +1,15 @@
 function solution(triangle) {
   const height = triangle.length;
-  let max = 0;
 
-  const dfs = (depth, idx, sum) => {
-    if (depth >= height) {
-      max = Math.max(max, sum);
-      return;
+  for (let i = 1; i < height; i++) {
+    for (let j = 0; j < triangle[i].length; j++) {
+      if (j === 0) triangle[i][j] += triangle[i - 1][j];
+      else if (j === triangle[i].length - 1)
+        triangle[i][j] += triangle[i - 1][j - 1];
+      else
+        triangle[i][j] += Math.max(triangle[i - 1][j], triangle[i - 1][j - 1]);
     }
+  }
 
-    dfs(depth + 1, idx, sum + triangle[depth][idx]);
-    dfs(depth + 1, idx + 1, sum + triangle[depth][idx]);
-  };
-
-  dfs(0, 0, 0);
-
-  return max;
+  return Math.max(...triangle[height - 1]);
 }
