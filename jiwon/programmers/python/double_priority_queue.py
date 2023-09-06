@@ -19,9 +19,11 @@ def solution(operations):
                 max_list.append(heappop(maxh))
         if len(insert_list) <= len(min_list) + len(max_list):
             minh, maxh = [], []
-    if len(insert_list) <= len(min_list) + len(max_list):
+
+    insert_len, min_len, max_len = len(insert_list), len(min_list), len(max_list)
+    if insert_len <= min_len + max_len:
         return [0, 0]
-    if len(insert_list) + 1 == len(min_list) + len(max_list):
+    if insert_len + 1 == min_len + max_len:
         value = [v for v in insert_list if not v in min_list and not v in max_list]
         return [value, value]
     return [maxh[0][1], minh[0]]
