@@ -7,7 +7,6 @@ function solution(n, s) {
   let idx = n - 1;
 
   while (rest !== 0) {
-    if (idx < 0) idx = n - 1;
     answer[idx] += 1;
     rest--;
     idx--;
