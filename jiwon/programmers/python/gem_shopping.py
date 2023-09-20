@@ -2,16 +2,23 @@ from sys import maxsize
 
 
 def solution(gems):
-    if len(gems) == 1:
-        return [1, 1]
-    answer = []
+    answer = [0, maxsize]
     all_gem_kind = len(set(gems))
-    for s in range(len(gems) - all_gem_kind + 1):
-        e = s
-        unique_gems = set()
-        while e < len(gems) and all_gem_kind != len(unique_gems):
-            unique_gems.add(gems[e])
+    s, e = 0, -1
+    gems_cnt = dict()
+    while e < len(gems):
+        if len(gems_cnt) == all_gem_kind:
+            if e - s < answer[1] - answer[0]:
+                answer = [s, e]
+            else:
+                gems_cnt[gems[s]] -= 1
+                if gems_cnt[gems[s]] == 0:
+                    del gems_cnt[gems[s]]
+                s += 1
+        else:
             e += 1
-        if all_gem_kind == len(unique_gems):
-            answer.append([s + 1, e])
-    return sorted(answer, key=lambda x: ((x[1] - x[0]), x[0]))[0]
+            if e == len(gems):
+                break
+            gems_cnt[gems[e]] = gems_cnt.get(gems[e], 0) + 1
+
+    return [answer[0] + 1, answer[1] + 1]
