@@ -8,5 +8,6 @@ def solution(A, B):
             pass
         else:
             answer += 1
+            j+1
 
     return answer
