@@ -4,18 +4,21 @@
 
 # 최대 갈 수 있는 칸수 k
 # 한 명씩만 건널 수 있음
-
-# 작은 구간을 만났을 때 그 구간이 가장 k만큼 이면 끝
-# stone -> 2, 4, 5
-# min(max, k)
-from sys import maxsize
+def is_cross(stones, num, k):
+    cnt = 0
+    for stone in stones:
+        cnt = cnt + 1 if stone <= num else 0
+        if cnt >= k:
+            return False
+    return True
 
 
 def solution(stones, k):
-    answer = maxsize
-    s = 0
-    while s + k <= len(stones):
-        part = max(stones[s:s + k])
-        answer = min(answer, part)
-        s += 1
-    return answer
+    start, end = 1, max(stones)
+    while start <= end:
+        mid = (start + end) // 2
+        if is_cross(stones, mid, k):
+            start = mid + 1
+        else:
+            end = mid - 1
+    return start
