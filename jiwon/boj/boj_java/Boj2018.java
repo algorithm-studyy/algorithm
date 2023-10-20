@@ -5,9 +5,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-
-// 짝수 : n // 2
-// 홀수 : n // 2 + 1
 public class Boj2018 {
 
     public static void main(String[] args) throws Exception {
