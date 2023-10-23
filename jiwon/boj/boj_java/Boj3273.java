@@ -2,8 +2,8 @@ package boj_java;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 public class Boj3273 {
@@ -19,12 +19,12 @@ public class Boj3273 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
         int x = Integer.parseInt(br.readLine());
-        Map<Integer, Boolean> map = new HashMap<>();
+        Set<Integer> set = new HashSet<>();
         for (int i : arr) {
-            if (x - i > 0 && map.containsKey(x - i)) {
+            if (x - i > 0 && set.contains(x - i)) {
                 answer++;
             }
-            map.put(i, true);
+            set.add(i);
         }
 
         System.out.println(answer);
