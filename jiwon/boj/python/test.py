@@ -1,5 +1,3 @@
-aaa = None
-if aaa:
-    print('aa')
-else:
-    print('asdasd')
+aaa = 'RRRRRRR'
+
+print(aaa.replace('RR', ''))
