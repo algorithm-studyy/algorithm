@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2735cb8-ae83-462d-b9cc-9171da99415c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1926.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boj/python/1926.py" afterDir="false" />
-    </list>
+    <list default="true" id="e2735cb8-ae83-462d-b9cc-9171da99415c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,7 +162,7 @@
       <workItem from="1698575180159" duration="5133000" />
       <workItem from="1698632609099" duration="1886000" />
       <workItem from="1698717957826" duration="2282000" />
-      <workItem from="1698809081091" duration="912000" />
+      <workItem from="1698809081091" duration="1707000" />
     </task>
     <servers />
   </component>
@@ -179,11 +176,6 @@
           <properties class="java.util.ConcurrentModificationException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/boj/boj_java/Boj2493.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
