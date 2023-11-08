@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2735cb8-ae83-462d-b9cc-9171da99415c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj4179.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1012.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/python/1012.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,20 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj4179">
+  <component name="RunManager" selected="Application.Boj1012">
+    <configuration name="Boj1012" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1012" />
+      <module name="jiwon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Boj1926" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj1926" />
       <module name="jiwon" />
@@ -111,33 +124,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj5430" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj5430" />
-      <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.Boj1012" />
       <item itemvalue="Application.Boj4179" />
       <item itemvalue="Application.Boj1926" />
       <item itemvalue="Application.Boj2504" />
       <item itemvalue="Application.Boj4949" />
-      <item itemvalue="Application.Boj5430" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj1012" />
         <item itemvalue="Application.Boj4179" />
         <item itemvalue="Application.Boj1926" />
         <item itemvalue="Application.Boj2504" />
         <item itemvalue="Application.Boj4949" />
-        <item itemvalue="Application.Boj5430" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +169,7 @@
       <workItem from="1698809081091" duration="1707000" />
       <workItem from="1698986601313" duration="504000" />
       <workItem from="1698987114837" duration="1764000" />
+      <workItem from="1699448003150" duration="1273000" />
     </task>
     <servers />
   </component>
