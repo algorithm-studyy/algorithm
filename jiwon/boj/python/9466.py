@@ -6,19 +6,22 @@ from collections import deque
 
 
 def bfs(x):
-    global result
-    visit = set()
-    q = deque([(x, set())])
+    global result, done
+    q = deque([(x, 0)])
     while q:
         start, cnt = q.popleft()
-        if len(cnt) > 0 and x == start:
-            result = result.union(cnt)
+        if cnt > 0 and x == start:
+            result -= cnt
             return
-        start = students[start] - 1
-        if start not in visit:
-            cnt.add(start)
-            q.append((start, cnt))
-            visit.add(start)
+        end = students[start] - 1
+        if x != end == start:
+            result -= 1
+            return
+        if end not in done:
+            q.append((end, cnt + 1))
+            done.add(end)
+        else:
+            return
 
 
 if __name__ == '__main__':
@@ -26,8 +29,10 @@ if __name__ == '__main__':
     for _ in range(t):
         n = int(stdin.readline())
         students = list(map(int, stdin.readline().split()))
-        result = set()
+        result = n
+        done = set()
         for i in range(n):
-            if i not in result:
+            if i not in done:
                 bfs(i)
-        print(n - len(result))
+        print(result)
+
