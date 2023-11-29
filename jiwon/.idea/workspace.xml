@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj13549.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +57,22 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj10026">
+  <component name="RunManager" selected="Application.Boj13549">
     <configuration name="Boj10026" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj10026" />
+      <module name="jiwon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boj13549" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13549" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -109,33 +123,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj4949" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj4949" />
-      <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.Boj13549" />
       <item itemvalue="Application.Boj10026" />
       <item itemvalue="Application.Boj4179" />
       <item itemvalue="Application.Boj1926" />
       <item itemvalue="Application.Boj2504" />
-      <item itemvalue="Application.Boj4949" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj13549" />
         <item itemvalue="Application.Boj10026" />
         <item itemvalue="Application.Boj4179" />
         <item itemvalue="Application.Boj1926" />
         <item itemvalue="Application.Boj2504" />
-        <item itemvalue="Application.Boj4949" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +170,7 @@
       <workItem from="1698987114837" duration="1764000" />
       <workItem from="1699707913280" duration="2539000" />
       <workItem from="1699776341992" duration="615000" />
+      <workItem from="1701261991945" duration="2201000" />
     </task>
     <servers />
   </component>
