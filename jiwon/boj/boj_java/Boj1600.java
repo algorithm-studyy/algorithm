@@ -36,7 +36,7 @@ public class Boj1600 {
     public static int bfs() {
         Deque<Point> points = new ArrayDeque<>();
         points.add(new Point(0, 0, k, 0));
-        int[][] dist = new int[h][w];
+        boolean[][][] visit = new boolean[h][w][k + 1];
         while (!points.isEmpty()) {
             Point point = points.pollFirst();
             int x = point.getX();
@@ -53,33 +53,30 @@ public class Boj1600 {
                     int nx = x + horse[i][0];
                     int ny = y + horse[i][1];
 
-                    if (canNotGo(dist, nx, ny)) {
+                    if (canNotGo(nx, ny) || visit[nx][ny][k - 1]) {
                         continue;
                     }
-                    dist[nx][ny] = cnt + 1;
+                    visit[nx][ny][k - 1] = true;
                     points.add(new Point(nx, ny, k - 1, cnt + 1));
                 }
-            } else {
-                for (int i = 0; i < 4; i++) {
-                    int nx = x + dx[i];
-                    int ny = y + dy[i];
-
-                    if (canNotGo(dist, nx, ny)) {
-                        continue;
-                    }
-                    dist[nx][ny] = cnt + 1;
-                    points.add(new Point(nx, ny, k, cnt + 1));
-                }
             }
+            for (int i = 0; i < 4; i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+
+                if (canNotGo(nx, ny) || visit[nx][ny][k]) {
+                    continue;
+                }
+                visit[nx][ny][k] = true;
+                points.add(new Point(nx, ny, k, cnt + 1));
+            }
+
         }
         return -1;
     }
 
-    private static boolean canNotGo(int[][] dist, int nx, int ny) {
-        if (nx >= h || nx < 0 || ny >= w || ny < 0 || board[nx][ny] == 1 || dist[nx][ny] != 0) {
-            return true;
-        }
-        return false;
+    private static boolean canNotGo(int nx, int ny) {
+        return nx >= h || nx < 0 || ny >= w || ny < 0 || board[nx][ny] == 1;
     }
 
     static class Point {

@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1600.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/boj_java/Boj1600.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj/boj_java/Boj1600.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +186,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/boj/boj_java/Boj1600.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
