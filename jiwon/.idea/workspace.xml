@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj13549.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/boj_java/Boj1600.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj/boj_java/Boj1600.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj13549">
+  <component name="RunManager" selected="Application.Boj1600">
     <configuration name="Boj10026" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj10026" />
       <module name="jiwon" />
@@ -84,8 +84,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj1926" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1926" />
+    <configuration name="Boj1600" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1600" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2504" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2504" />
+    <configuration name="Boj1926" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1926" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -124,19 +124,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj1600" />
       <item itemvalue="Application.Boj13549" />
       <item itemvalue="Application.Boj10026" />
       <item itemvalue="Application.Boj4179" />
       <item itemvalue="Application.Boj1926" />
-      <item itemvalue="Application.Boj2504" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj1600" />
         <item itemvalue="Application.Boj13549" />
         <item itemvalue="Application.Boj10026" />
         <item itemvalue="Application.Boj4179" />
         <item itemvalue="Application.Boj1926" />
-        <item itemvalue="Application.Boj2504" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +184,11 @@
           <properties class="java.util.ConcurrentModificationException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/Boj1600.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
