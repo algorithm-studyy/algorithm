@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1629.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1780.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,7 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj1629">
+  <component name="RunManager" selected="Application.Boj1780">
     <configuration name="Boj10026" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj10026" />
       <module name="jiwon" />
@@ -110,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj4179" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj4179" />
+    <configuration name="Boj1780" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1780" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -124,19 +124,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj1780" />
       <item itemvalue="Application.Boj1629" />
       <item itemvalue="Application.Boj1600" />
       <item itemvalue="Application.Boj13549" />
       <item itemvalue="Application.Boj10026" />
-      <item itemvalue="Application.Boj4179" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj1780" />
         <item itemvalue="Application.Boj1629" />
         <item itemvalue="Application.Boj1600" />
         <item itemvalue="Application.Boj13549" />
         <item itemvalue="Application.Boj10026" />
-        <item itemvalue="Application.Boj4179" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +188,11 @@
           <url>file://$PROJECT_DIR$/boj/boj_java/Boj1600.java</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/Boj1780.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
