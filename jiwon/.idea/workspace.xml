@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj2447.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 별찍기 10">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj15663.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Boj15663.executor&quot;: &quot;Run&quot;,
     &quot;Application.Boj2447.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -50,6 +51,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -63,9 +67,9 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj2447">
-    <configuration name="Boj1600" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1600" />
+  <component name="RunManager" selected="Application.Boj15663">
+    <configuration name="Boj15663" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj15663" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -130,19 +134,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj15663" />
       <item itemvalue="Application.Boj2447" />
       <item itemvalue="Application.Boj2630" />
       <item itemvalue="Application.Boj1780" />
       <item itemvalue="Application.Boj1629" />
-      <item itemvalue="Application.Boj1600" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj15663" />
         <item itemvalue="Application.Boj2447" />
         <item itemvalue="Application.Boj2630" />
         <item itemvalue="Application.Boj1780" />
         <item itemvalue="Application.Boj1629" />
-        <item itemvalue="Application.Boj1600" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +190,7 @@
       <workItem from="1701261991945" duration="2201000" />
       <workItem from="1702297933430" duration="8538000" />
       <workItem from="1702342896579" duration="2128000" />
+      <workItem from="1702515865256" duration="2328000" />
     </task>
     <servers />
   </component>
