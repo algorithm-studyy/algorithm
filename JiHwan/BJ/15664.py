@@ -3,7 +3,7 @@ def back(start):
         print(" ".join(map(str, answer)))
         return
     prev = 0
-    for i in range(n):
+    for i in range(start, n):
         if not visited[i] and prev != nums[i]:
             visited[i] = True
             answer.append(nums[i])
