@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 별찍기 10">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj16987.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj13335.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +39,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Boj13335 (1).executor": "Run",
+    "Application.Boj13335.executor": "Run",
     "Application.Boj15663.executor": "Run",
     "Application.Boj15664.executor": "Run",
     "Application.Boj15665.executor": "Run",
     "Application.Boj16987.executor": "Debug",
+    "Application.Boj1941.executor": "Run",
     "Application.Boj2447.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,9 +73,9 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj16987">
-    <configuration name="Boj15663" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj15663" />
+  <component name="RunManager" selected="Application.Boj13335">
+    <configuration name="Boj13335 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13335" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj15664" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj15664" />
+    <configuration name="Boj13335" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13335" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -123,8 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2447" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2447" />
+    <configuration name="Boj1941" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1941" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -137,19 +140,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj13335" />
+      <item itemvalue="Application.Boj13335 (1)" />
+      <item itemvalue="Application.Boj1941" />
       <item itemvalue="Application.Boj16987" />
       <item itemvalue="Application.Boj15665" />
-      <item itemvalue="Application.Boj15664" />
-      <item itemvalue="Application.Boj15663" />
-      <item itemvalue="Application.Boj2447" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj13335" />
+        <item itemvalue="Application.Boj13335 (1)" />
+        <item itemvalue="Application.Boj1941" />
         <item itemvalue="Application.Boj16987" />
         <item itemvalue="Application.Boj15665" />
-        <item itemvalue="Application.Boj15664" />
-        <item itemvalue="Application.Boj15663" />
-        <item itemvalue="Application.Boj2447" />
       </list>
     </recent_temporary>
   </component>
@@ -195,11 +198,18 @@
       <workItem from="1702342896579" duration="2128000" />
       <workItem from="1702515865256" duration="2328000" />
       <workItem from="1702903578259" duration="958000" />
+      <workItem from="1703593966617" duration="6840000" />
+      <workItem from="1703638310870" duration="1346000" />
+      <workItem from="1703724612475" duration="4290000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="백준 소문난 칠공주 실패" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 소문난 칠공주 실패" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -227,6 +237,11 @@
           <url>file://$PROJECT_DIR$/boj/boj_java/Boj16987.java</url>
           <line>31</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/Boj13335.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
