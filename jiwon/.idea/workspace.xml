@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 별찍기 10">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj15663.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj13335.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,27 +37,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Boj15663.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj2447.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Boj13335 (1).executor": "Run",
+    "Application.Boj13335.executor": "Run",
+    "Application.Boj15663.executor": "Run",
+    "Application.Boj15664.executor": "Run",
+    "Application.Boj15665.executor": "Run",
+    "Application.Boj16987.executor": "Debug",
+    "Application.Boj1941.executor": "Run",
+    "Application.Boj2447.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/boj/boj_java" />
@@ -67,9 +73,9 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj15663">
-    <configuration name="Boj15663" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj15663" />
+  <component name="RunManager" selected="Application.Boj13335">
+    <configuration name="Boj13335 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13335" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj1629" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1629" />
+    <configuration name="Boj13335" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13335" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj1780" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1780" />
+    <configuration name="Boj15665" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj15665" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2447" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2447" />
+    <configuration name="Boj16987" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj16987" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2630" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2630" />
+    <configuration name="Boj1941" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1941" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -134,19 +140,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Boj15663" />
-      <item itemvalue="Application.Boj2447" />
-      <item itemvalue="Application.Boj2630" />
-      <item itemvalue="Application.Boj1780" />
-      <item itemvalue="Application.Boj1629" />
+      <item itemvalue="Application.Boj13335" />
+      <item itemvalue="Application.Boj13335 (1)" />
+      <item itemvalue="Application.Boj1941" />
+      <item itemvalue="Application.Boj16987" />
+      <item itemvalue="Application.Boj15665" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Boj15663" />
-        <item itemvalue="Application.Boj2447" />
-        <item itemvalue="Application.Boj2630" />
-        <item itemvalue="Application.Boj1780" />
-        <item itemvalue="Application.Boj1629" />
+        <item itemvalue="Application.Boj13335" />
+        <item itemvalue="Application.Boj13335 (1)" />
+        <item itemvalue="Application.Boj1941" />
+        <item itemvalue="Application.Boj16987" />
+        <item itemvalue="Application.Boj15665" />
       </list>
     </recent_temporary>
   </component>
@@ -191,11 +197,19 @@
       <workItem from="1702297933430" duration="8538000" />
       <workItem from="1702342896579" duration="2128000" />
       <workItem from="1702515865256" duration="2328000" />
+      <workItem from="1702903578259" duration="958000" />
+      <workItem from="1703593966617" duration="6840000" />
+      <workItem from="1703638310870" duration="1346000" />
+      <workItem from="1703724612475" duration="4290000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="백준 소문난 칠공주 실패" />
+    <option name="LAST_COMMIT_MESSAGE" value="백준 소문난 칠공주 실패" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -218,6 +232,16 @@
           <url>file://$PROJECT_DIR$/boj/boj_java/Boj2630.java</url>
           <line>38</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/Boj16987.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/Boj13335.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
