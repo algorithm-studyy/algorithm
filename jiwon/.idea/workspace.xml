@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj11559.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj14891.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +42,7 @@
     "Application.Boj11559.executor": "Run",
     "Application.Boj13335 (1).executor": "Run",
     "Application.Boj13335.executor": "Run",
+    "Application.Boj14891.executor": "Run",
     "Application.Boj15663.executor": "Run",
     "Application.Boj15664.executor": "Run",
     "Application.Boj15665.executor": "Run",
@@ -74,7 +75,7 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj11559">
+  <component name="RunManager" selected="Application.Boj14891">
     <configuration name="Boj11559" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj11559" />
       <module name="jiwon" />
@@ -114,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj16987" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj16987" />
+    <configuration name="Boj14891" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj14891" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -141,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj14891" />
       <item itemvalue="Application.Boj11559" />
       <item itemvalue="Application.Boj13335" />
       <item itemvalue="Application.Boj13335 (1)" />
       <item itemvalue="Application.Boj1941" />
-      <item itemvalue="Application.Boj16987" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj14891" />
         <item itemvalue="Application.Boj11559" />
         <item itemvalue="Application.Boj13335" />
         <item itemvalue="Application.Boj13335 (1)" />
         <item itemvalue="Application.Boj1941" />
-        <item itemvalue="Application.Boj16987" />
       </list>
     </recent_temporary>
   </component>
