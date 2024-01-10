@@ -30,31 +30,30 @@ public class Boj14891 {
     }
 
     private static void rotateWheels(int idx, int direction) {
-        int leftDir = 0;
-        int rightDir = 0;
+        int[] dirs = new int[4];
+        dirs[idx] = direction;
 
-        if (idx == 1 || idx == 2) {
-            if (wheels[idx - 1].get(2) != wheels[idx].get(6)) {
-                leftDir = direction * -1;
-            }
-            if (wheels[idx + 1].get(6) != wheels[idx].get(2)) {
-                rightDir = direction * -1;
-            }
-        } else if (idx == 0) {
-            if (wheels[idx].get(2) != wheels[idx + 1].get(6)) {
-                rightDir = direction * -1;
-            }
-        } else if (idx == 3) {
-            if (wheels[idx].get(6) != wheels[idx - 1].get(2)) {
-                leftDir = direction * -1;
+        int leftIdx = idx;
+        int rightIdx = idx;
+        while (leftIdx > 0) {
+            if (wheels[leftIdx].get(6) != wheels[leftIdx - 1].get(2)) {
+                dirs[leftIdx - 1] = -dirs[leftIdx];
+                leftIdx--;
+            } else {
+                break;
             }
         }
-        rotate(idx, direction);
-        if (leftDir != 0) {
-            rotateWheels(idx - 1, leftDir);
+        while (rightIdx < 3) {
+            if (wheels[rightIdx].get(2) != wheels[rightIdx + 1].get(6)) {
+                dirs[rightIdx + 1] = -dirs[rightIdx];
+                rightIdx++;
+            } else {
+                break;
+            }
         }
-        if (rightDir != 0) {
-            rotate(idx + 1, rightDir);
+
+        for (int i = 0; i < dirs.length; i++) {
+            rotate(i, dirs[i]);
         }
     }
 
