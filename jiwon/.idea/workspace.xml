@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj2579.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/ManyPresent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
     "Application.Boj1941.executor": "Run",
     "Application.Boj2447.executor": "Run",
     "Application.Boj2579.executor": "Run",
+    "Application.ManyPresent.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -77,7 +78,7 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj2579">
+  <component name="RunManager" selected="Application.ManyPresent">
     <configuration name="Boj11559" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj11559" />
       <module name="jiwon" />
@@ -93,19 +94,6 @@
     </configuration>
     <configuration name="Boj12852" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj12852" />
-      <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Boj13335" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13335" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -143,20 +131,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ManyPresent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.ManyPresent" />
+      <module name="jiwon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Application.ManyPresent" />
       <item itemvalue="Application.Boj2579" />
       <item itemvalue="Application.Boj12852" />
       <item itemvalue="Application.Boj14891" />
       <item itemvalue="Application.Boj11559" />
-      <item itemvalue="Application.Boj13335" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ManyPresent" />
         <item itemvalue="Application.Boj2579" />
         <item itemvalue="Application.Boj12852" />
         <item itemvalue="Application.Boj14891" />
         <item itemvalue="Application.Boj11559" />
-        <item itemvalue="Application.Boj13335" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +245,11 @@
           <url>file://$PROJECT_DIR$/boj/boj_java/Boj16987.java</url>
           <line>31</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boj/boj_java/ManyPresent.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
