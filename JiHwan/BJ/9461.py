@@ -3,6 +3,7 @@ for i in range(n):
     m = int(input())
     arr = [0] * 101
 
+
     arr[1] = 1
     arr[2] = 1
     arr[3] = 1
