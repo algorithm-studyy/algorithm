@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj9461.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codetree/DifferentThreeBucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/boj/python/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,39 +39,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Boj11559.executor": "Run",
-    "Application.Boj12852.executor": "Run",
-    "Application.Boj13335 (1).executor": "Run",
-    "Application.Boj13335.executor": "Run",
-    "Application.Boj14891.executor": "Run",
-    "Application.Boj15663.executor": "Run",
-    "Application.Boj15664.executor": "Run",
-    "Application.Boj15665.executor": "Run",
-    "Application.Boj16987.executor": "Debug",
-    "Application.Boj1941.executor": "Run",
-    "Application.Boj2447.executor": "Run",
-    "Application.Boj2579.executor": "Run",
-    "Application.Boj9461.executor": "Run",
-    "Application.ManyPresent.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Boj11559.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj12852.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj13335 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj13335.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj14891.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15663.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15664.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15665.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj16987.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Boj1941.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj2447.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj2579.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj9461.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ManyPresent.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/boj/boj_java" />
@@ -210,7 +212,9 @@
       <workItem from="1704630828478" duration="6589000" />
       <workItem from="1705452772189" duration="598000" />
       <workItem from="1705538759881" duration="4407000" />
-      <workItem from="1706531545871" duration="633000" />
+      <workItem from="1706531545871" duration="787000" />
+      <workItem from="1706932525256" duration="223000" />
+      <workItem from="1709556452586" duration="1710000" />
     </task>
     <servers />
   </component>
