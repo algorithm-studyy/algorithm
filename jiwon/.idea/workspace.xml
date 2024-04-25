@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj1244.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj2501.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="약수 구하기">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj14888.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +45,7 @@
     "Application.Boj13335 (1).executor": "Run",
     "Application.Boj13335.executor": "Run",
     "Application.Boj13458.executor": "Run",
+    "Application.Boj14888.executor": "Run",
     "Application.Boj14891.executor": "Run",
     "Application.Boj15663.executor": "Run",
     "Application.Boj15664.executor": "Run",
@@ -84,7 +84,7 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj2501">
+  <component name="RunManager" selected="Application.Boj14888">
     <configuration name="Boj1244" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj1244" />
       <module name="jiwon" />
@@ -100,6 +100,19 @@
     </configuration>
     <configuration name="Boj13458" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj13458" />
+      <module name="jiwon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boj14888" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj14888" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -137,33 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManyPresent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.ManyPresent" />
-      <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.Boj14888" />
       <item itemvalue="Application.Boj2501" />
       <item itemvalue="Application.Boj1244" />
       <item itemvalue="Application.Boj13458" />
       <item itemvalue="Application.Boj9461" />
-      <item itemvalue="Application.ManyPresent" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj14888" />
         <item itemvalue="Application.Boj2501" />
         <item itemvalue="Application.Boj1244" />
         <item itemvalue="Application.Boj13458" />
         <item itemvalue="Application.Boj9461" />
-        <item itemvalue="Application.ManyPresent" />
       </list>
     </recent_temporary>
   </component>
@@ -252,8 +252,17 @@
       <workItem from="1712538443159" duration="598000" />
       <workItem from="1712624121072" duration="531000" />
       <workItem from="1713964093424" duration="5000" />
-      <workItem from="1714019622962" duration="2542000" />
+      <workItem from="1714019622962" duration="7749000" />
     </task>
+    <task id="LOCAL-00001" summary="약수 구하기">
+      <option name="closed" value="true" />
+      <created>1714024513946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714024513946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +270,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="백준 소문난 칠공주 실패" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 소문난 칠공주 실패" />
+    <MESSAGE value="약수 구하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="약수 구하기" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
