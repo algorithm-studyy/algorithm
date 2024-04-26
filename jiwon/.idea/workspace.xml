@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="연산자 끼워넣기">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj16953.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="A -&gt; B">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj12851.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boj/boj_java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj/boj_java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,8 @@
   "keyToString": {
     "Application.Boj11559.executor": "Run",
     "Application.Boj1244.executor": "Run",
+    "Application.Boj12851 (1).executor": "Run",
+    "Application.Boj12851.executor": "Run",
     "Application.Boj12852.executor": "Run",
     "Application.Boj13335 (1).executor": "Run",
     "Application.Boj13335.executor": "Run",
@@ -58,6 +61,7 @@
     "Application.Boj2579.executor": "Run",
     "Application.Boj9461.executor": "Run",
     "Application.ManyPresent.executor": "Run",
+    "Application.Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,9 +89,9 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj16953">
-    <configuration name="Boj1244" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj1244" />
+  <component name="RunManager" selected="Application.Boj12851">
+    <configuration name="Boj12851 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj13458" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13458" />
+    <configuration name="Boj12851" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -138,33 +142,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2501" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2501" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Boj12851" />
+      <item itemvalue="Application.Boj12851 (1)" />
       <item itemvalue="Application.Boj16953" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="Application.Boj14888" />
-      <item itemvalue="Application.Boj2501" />
-      <item itemvalue="Application.Boj1244" />
-      <item itemvalue="Application.Boj13458" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Boj12851" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Boj12851 (1)" />
         <item itemvalue="Application.Boj16953" />
         <item itemvalue="Application.Boj14888" />
-        <item itemvalue="Application.Boj2501" />
-        <item itemvalue="Application.Boj1244" />
-        <item itemvalue="Application.Boj13458" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +252,7 @@
       <workItem from="1712624121072" duration="531000" />
       <workItem from="1713964093424" duration="5000" />
       <workItem from="1714019622962" duration="8680000" />
-      <workItem from="1714093673420" duration="5034000" />
+      <workItem from="1714093673420" duration="12169000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -272,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714047709196</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A -&gt; B">
+      <option name="closed" value="true" />
+      <created>1714107323174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714107323174</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +288,8 @@
     <MESSAGE value="백준 소문난 칠공주 실패" />
     <MESSAGE value="약수 구하기" />
     <MESSAGE value="연산자 끼워넣기" />
-    <option name="LAST_COMMIT_MESSAGE" value="연산자 끼워넣기" />
+    <MESSAGE value="A -&gt; B" />
+    <option name="LAST_COMMIT_MESSAGE" value="A -&gt; B" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
