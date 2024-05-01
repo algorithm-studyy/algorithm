@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="백준 소문난 칠공주 실패">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj13458.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/NumPY.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,20 +40,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Boj11559.executor": "Run",
+    "Application.Boj1244.executor": "Run",
+    "Application.Boj12851 (1).executor": "Run",
+    "Application.Boj12851.executor": "Run",
     "Application.Boj12852.executor": "Run",
     "Application.Boj13335 (1).executor": "Run",
     "Application.Boj13335.executor": "Run",
     "Application.Boj13458.executor": "Run",
+    "Application.Boj14888.executor": "Run",
     "Application.Boj14891.executor": "Run",
     "Application.Boj15663.executor": "Run",
     "Application.Boj15664.executor": "Run",
     "Application.Boj15665.executor": "Run",
+    "Application.Boj16953.executor": "Run",
     "Application.Boj16987.executor": "Debug",
     "Application.Boj1941.executor": "Run",
     "Application.Boj2447.executor": "Run",
+    "Application.Boj2501.executor": "Run",
     "Application.Boj2579.executor": "Run",
     "Application.Boj9461.executor": "Run",
     "Application.ManyPresent.executor": "Run",
+    "Application.NumPY.executor": "Run",
+    "Application.Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -82,9 +89,9 @@
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Boj13458">
-    <configuration name="Boj12852" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12852" />
+  <component name="RunManager" selected="Application.NumPY">
+    <configuration name="Boj12851 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj13458" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj13458" />
+    <configuration name="Boj12851" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +116,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj2579" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj2579" />
+    <configuration name="Boj16953" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.Boj16953" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj9461" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj9461" />
+    <configuration name="NumPY" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.NumPY" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -135,33 +142,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManyPresent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.ManyPresent" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Boj13458" />
-      <item itemvalue="Application.Boj12852" />
-      <item itemvalue="Application.Boj2579" />
-      <item itemvalue="Application.Boj9461" />
-      <item itemvalue="Application.ManyPresent" />
+      <item itemvalue="Application.NumPY" />
+      <item itemvalue="Application.Boj12851" />
+      <item itemvalue="Application.Boj12851 (1)" />
+      <item itemvalue="Application.Boj16953" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Boj13458" />
-        <item itemvalue="Application.Boj9461" />
-        <item itemvalue="Application.ManyPresent" />
-        <item itemvalue="Application.Boj2579" />
-        <item itemvalue="Application.Boj12852" />
+        <item itemvalue="Application.NumPY" />
+        <item itemvalue="Application.Boj12851" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Boj12851 (1)" />
+        <item itemvalue="Application.Boj16953" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +221,77 @@
       <workItem from="1709772800098" duration="594000" />
       <workItem from="1709799750825" duration="2000" />
       <workItem from="1709815465423" duration="1585000" />
+      <workItem from="1709961045790" duration="582000" />
+      <workItem from="1710205112097" duration="574000" />
+      <workItem from="1710291236743" duration="580000" />
+      <workItem from="1710378308177" duration="597000" />
+      <workItem from="1710488285257" duration="598000" />
+      <workItem from="1710571555206" duration="598000" />
+      <workItem from="1710657710462" duration="596000" />
+      <workItem from="1710719012559" duration="598000" />
+      <workItem from="1710743619424" duration="684000" />
+      <workItem from="1710809927629" duration="596000" />
+      <workItem from="1710825941852" duration="598000" />
+      <workItem from="1711068993793" duration="567000" />
+      <workItem from="1711259276207" duration="593000" />
+      <workItem from="1711327621004" duration="586000" />
+      <workItem from="1711414406430" duration="598000" />
+      <workItem from="1711496403163" duration="598000" />
+      <workItem from="1711583954359" duration="2538000" />
+      <workItem from="1711673376171" duration="592000" />
+      <workItem from="1711780084082" duration="1197000" />
+      <workItem from="1711933814706" duration="557000" />
+      <workItem from="1712019958545" duration="598000" />
+      <workItem from="1712103025581" duration="153000" />
+      <workItem from="1712103736854" duration="512000" />
+      <workItem from="1712277718301" duration="1183000" />
+      <workItem from="1712378451929" duration="501000" />
+      <workItem from="1712483411079" duration="594000" />
+      <workItem from="1712497337751" duration="598000" />
+      <workItem from="1712538443159" duration="598000" />
+      <workItem from="1712624121072" duration="531000" />
+      <workItem from="1713964093424" duration="5000" />
+      <workItem from="1714019622962" duration="8680000" />
+      <workItem from="1714093673420" duration="12304000" />
+      <workItem from="1714191361852" duration="1358000" />
+      <workItem from="1714305250994" duration="1383000" />
+      <workItem from="1714349694862" duration="598000" />
+      <workItem from="1714435424251" duration="3346000" />
+      <workItem from="1714567860493" duration="2816000" />
     </task>
+    <task id="LOCAL-00001" summary="약수 구하기">
+      <option name="closed" value="true" />
+      <created>1714024513946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714024513946</updated>
+    </task>
+    <task id="LOCAL-00002" summary="연산자 끼워넣기">
+      <option name="closed" value="true" />
+      <created>1714047709196</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714047709196</updated>
+    </task>
+    <task id="LOCAL-00003" summary="A -&gt; B">
+      <option name="closed" value="true" />
+      <created>1714107323174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714107323174</updated>
+    </task>
+    <task id="LOCAL-00004" summary="숨바꼭질2">
+      <option name="closed" value="true" />
+      <created>1714116927908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714116927908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,8 +299,228 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="백준 소문난 칠공주 실패" />
-    <option name="LAST_COMMIT_MESSAGE" value="백준 소문난 칠공주 실패" />
+    <MESSAGE value="약수 구하기" />
+    <MESSAGE value="연산자 끼워넣기" />
+    <MESSAGE value="A -&gt; B" />
+    <MESSAGE value="숨바꼭질2" />
+    <option name="LAST_COMMIT_MESSAGE" value="숨바꼭질2" />
   </component>
+  <component name="WfRunsListSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    }
+  ],
+  "lastFilter": {
+    "branch": "algo",
+    "currentBranchFilter": true
+  }
+}]]></component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
