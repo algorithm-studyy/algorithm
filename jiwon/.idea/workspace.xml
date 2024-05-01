@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="A -&gt; B">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Boj12851.java" afterDir="false" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
+      <change afterPath="$PROJECT_DIR$/codetree/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/boj/boj_java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/boj/boj_java/Test.java" afterDir="false" />
     </list>
@@ -38,48 +38,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Boj11559.executor": "Run",
-    "Application.Boj1244.executor": "Run",
-    "Application.Boj12851 (1).executor": "Run",
-    "Application.Boj12851.executor": "Run",
-    "Application.Boj12852.executor": "Run",
-    "Application.Boj13335 (1).executor": "Run",
-    "Application.Boj13335.executor": "Run",
-    "Application.Boj13458.executor": "Run",
-    "Application.Boj14888.executor": "Run",
-    "Application.Boj14891.executor": "Run",
-    "Application.Boj15663.executor": "Run",
-    "Application.Boj15664.executor": "Run",
-    "Application.Boj15665.executor": "Run",
-    "Application.Boj16953.executor": "Run",
-    "Application.Boj16987.executor": "Debug",
-    "Application.Boj1941.executor": "Run",
-    "Application.Boj2447.executor": "Run",
-    "Application.Boj2501.executor": "Run",
-    "Application.Boj2579.executor": "Run",
-    "Application.Boj9461.executor": "Run",
-    "Application.ManyPresent.executor": "Run",
-    "Application.Test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Boj11559.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj1244.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj12851 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj12851.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj12852.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj13335 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj13335.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj13458.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj14888.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj14891.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15663.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15664.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj15665.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj16953.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj16987.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Boj1941.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj2447.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj2501.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj2579.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Boj9461.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ManyPresent.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/boj/boj_java" />
@@ -150,11 +150,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Boj12851" />
       <item itemvalue="Application.Boj12851 (1)" />
+      <item itemvalue="Application.Boj12851" />
+      <item itemvalue="Application.Boj14888" />
       <item itemvalue="Application.Boj16953" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Boj14888" />
     </list>
     <recent_temporary>
       <list>
@@ -252,7 +252,11 @@
       <workItem from="1712624121072" duration="531000" />
       <workItem from="1713964093424" duration="5000" />
       <workItem from="1714019622962" duration="8680000" />
-      <workItem from="1714093673420" duration="12169000" />
+      <workItem from="1714093673420" duration="12304000" />
+      <workItem from="1714191361852" duration="1358000" />
+      <workItem from="1714305250994" duration="1383000" />
+      <workItem from="1714349694862" duration="598000" />
+      <workItem from="1714435424251" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -278,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714107323174</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="숨바꼭질2">
+      <option name="closed" value="true" />
+      <created>1714116927908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714116927908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,184 +301,217 @@
     <MESSAGE value="약수 구하기" />
     <MESSAGE value="연산자 끼워넣기" />
     <MESSAGE value="A -&gt; B" />
-    <option name="LAST_COMMIT_MESSAGE" value="A -&gt; B" />
+    <MESSAGE value="숨바꼭질2" />
+    <option name="LAST_COMMIT_MESSAGE" value="숨바꼭질2" />
   </component>
-  <component name="WfRunsListSearchHistory"><![CDATA[{
-  "history": [
+  <component name="WfRunsListSearchHistory">{
+  &quot;history&quot;: [
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     },
     {
-      "branch": "algo",
-      "currentBranchFilter": true
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
+    },
+    {
+      &quot;branch&quot;: &quot;algo&quot;,
+      &quot;currentBranchFilter&quot;: true
     }
   ],
-  "lastFilter": {
-    "branch": "algo",
-    "currentBranchFilter": true
+  &quot;lastFilter&quot;: {
+    &quot;branch&quot;: &quot;algo&quot;,
+    &quot;currentBranchFilter&quot;: true
   }
-}]]></component>
+}</component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
