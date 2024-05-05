@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/NumPY.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/Budget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/HateSameNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/boj/boj_java/StringToInteger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/python/Hate_Same_Number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/python/String_to_Integer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programmers/python/budget.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +64,10 @@
     "Application.Boj2501.executor": "Run",
     "Application.Boj2579.executor": "Run",
     "Application.Boj9461.executor": "Run",
+    "Application.HateSameNumber.executor": "Run",
     "Application.ManyPresent.executor": "Run",
     "Application.NumPY.executor": "Run",
+    "Application.StringToInteger.executor": "Run",
     "Application.Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -85,24 +92,14 @@
       <recent name="$PROJECT_DIR$/boj/boj_java" />
       <recent name="$PROJECT_DIR$/boj/boj_kotlin" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/programmers/java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="boj_java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NumPY">
-    <configuration name="Boj12851 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
-      <module name="jiwon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj_java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.HateSameNumber">
     <configuration name="Boj12851" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="boj_java.Boj12851" />
       <module name="jiwon" />
@@ -116,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boj16953" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj_java.Boj16953" />
+    <configuration name="HateSameNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.HateSameNumber" />
       <module name="jiwon" />
       <extension name="coverage">
         <pattern>
@@ -142,6 +139,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj_java.StringToInteger" />
+      <module name="jiwon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj_java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="jiwon" />
@@ -150,19 +160,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.HateSameNumber" />
+      <item itemvalue="Application.StringToInteger" />
       <item itemvalue="Application.NumPY" />
       <item itemvalue="Application.Boj12851" />
-      <item itemvalue="Application.Boj12851 (1)" />
-      <item itemvalue="Application.Boj16953" />
       <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HateSameNumber" />
+        <item itemvalue="Application.StringToInteger" />
         <item itemvalue="Application.NumPY" />
         <item itemvalue="Application.Boj12851" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Boj12851 (1)" />
-        <item itemvalue="Application.Boj16953" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +267,11 @@
       <workItem from="1714305250994" duration="1383000" />
       <workItem from="1714349694862" duration="598000" />
       <workItem from="1714435424251" duration="3346000" />
-      <workItem from="1714567860493" duration="2816000" />
+      <workItem from="1714567860493" duration="2967000" />
+      <workItem from="1714646993414" duration="598000" />
+      <workItem from="1714707843352" duration="772000" />
+      <workItem from="1714788230697" duration="598000" />
+      <workItem from="1714902344294" duration="3247000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -307,6 +321,38 @@
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
     {
       "branch": "algo",
       "currentBranchFilter": true
