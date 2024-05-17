@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/Budget2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/boj/boj_java/SecretMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +278,11 @@
       <workItem from="1715145054147" duration="6491000" />
       <workItem from="1715220272199" duration="3104000" />
       <workItem from="1715499433267" duration="560000" />
-      <workItem from="1715567248380" duration="622000" />
+      <workItem from="1715567248380" duration="1227000" />
+      <workItem from="1715667327176" duration="2964000" />
+      <workItem from="1715755578124" duration="588000" />
+      <workItem from="1715825533611" duration="597000" />
+      <workItem from="1715906585592" duration="592000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -330,6 +332,38 @@
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
     {
       "branch": "algo",
       "currentBranchFilter": true
