@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SWEA/three_string.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,6 +283,7 @@
       <workItem from="1715755578124" duration="588000" />
       <workItem from="1715825533611" duration="597000" />
       <workItem from="1715906585592" duration="592000" />
+      <workItem from="1716035008667" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -332,6 +333,14 @@
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
     {
       "branch": "algo",
       "currentBranchFilter": true
