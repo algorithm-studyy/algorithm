@@ -12,7 +12,7 @@ def get_distance(a, b):
 
 
 def solution(numbers, hand):
-    answer = ''
+    answer = ''드
     left = [3, 0]
     right = [3, 2]
     phone_loc = get_location()
