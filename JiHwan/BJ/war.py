@@ -5,6 +5,18 @@ def bfs(y, x):
     q = deque()
     q.append((y, x))
     cur = arr[y][x]
+    arr[y][x] = 1
+    count = 0
+    while q:
+        y, x = q.popleft()
+        count += 1
+        for i in range(4):
+            n_dy = y + dy[i]
+            n_dx = x + dx[i]
+            if (0 <= n_dy < m) and (0 <= n_dx < n) and arr[n_dy][n_dx] == cur:
+                q.append((n_dy, n_dx))
+                arr[n_dy][n_dx] = 1
+    return count
 
 
 if __name__ == "__main__":
@@ -22,11 +34,12 @@ if __name__ == "__main__":
     for i in range(m):
         for j in range(n):
             if arr[i][j] == 'W':
-                w_cnt += bfs(i, j)
+                w_cnt += bfs(i, j) ** 2
             elif arr[i][j] == 'B':
-                b_cnt += bfs(i, j)
+                b_cnt += bfs(i, j) ** 2
 
-
+    print(w_cnt)
+    print(b_cnt)
 
 
 
