@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
-      <change afterPath="$PROJECT_DIR$/SWEA/three_string.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,52 +36,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Boj11559.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj1244.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj12851 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj12851.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj12852.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj13335 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj13335.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj13458.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj14888.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj14891.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj15663.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj15664.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj15665.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj16953.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj16987.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Boj1941.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj2447.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj2501.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj2579.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Boj9461.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Budget2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HateSameNumber.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ManyPresent.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NumPY.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StringToInteger.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jiwonyang/Desktop/algorithm_study/jiwon/boj/boj_java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Boj11559.executor": "Run",
+    "Application.Boj1244.executor": "Run",
+    "Application.Boj12851 (1).executor": "Run",
+    "Application.Boj12851.executor": "Run",
+    "Application.Boj12852.executor": "Run",
+    "Application.Boj13335 (1).executor": "Run",
+    "Application.Boj13335.executor": "Run",
+    "Application.Boj13458.executor": "Run",
+    "Application.Boj14888.executor": "Run",
+    "Application.Boj14891.executor": "Run",
+    "Application.Boj15663.executor": "Run",
+    "Application.Boj15664.executor": "Run",
+    "Application.Boj15665.executor": "Run",
+    "Application.Boj16953.executor": "Run",
+    "Application.Boj16987.executor": "Debug",
+    "Application.Boj1941.executor": "Run",
+    "Application.Boj2447.executor": "Run",
+    "Application.Boj2501.executor": "Run",
+    "Application.Boj2579.executor": "Run",
+    "Application.Boj9461.executor": "Run",
+    "Application.Budget2.executor": "Run",
+    "Application.HateSameNumber.executor": "Run",
+    "Application.ManyPresent.executor": "Run",
+    "Application.NumPY.executor": "Run",
+    "Application.StringToInteger.executor": "Run",
+    "Application.Test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jiwonyang/Documents/GitHub/algorithm/jiwon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/boj/boj_java" />
@@ -180,7 +180,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.21-corretto-11.0.21-3183f394aec4-26afc3bf" />
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-396cc1b2" />
       </set>
     </attachedChunks>
   </component>
@@ -284,6 +284,7 @@
       <workItem from="1715825533611" duration="597000" />
       <workItem from="1715906585592" duration="592000" />
       <workItem from="1716035008667" duration="598000" />
+      <workItem from="1721303015977" duration="1303000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -333,6 +334,10 @@
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
+    {
+      "branch": "algo",
+      "currentBranchFilter": true
+    },
     {
       "branch": "algo",
       "currentBranchFilter": true
