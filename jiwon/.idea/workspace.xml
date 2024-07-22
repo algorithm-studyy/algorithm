@@ -665,10 +665,14 @@
     {
       "branch": "algo",
       "currentBranchFilter": true
+    },
+    {
+      "branch": "main",
+      "currentBranchFilter": true
     }
   ],
   "lastFilter": {
-    "branch": "algo",
+    "branch": "main",
     "currentBranchFilter": true
   }
 }]]></component>
