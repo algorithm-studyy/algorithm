@@ -11,7 +11,7 @@ def find_fail_team(records):
 
 
 def calculate_team_score(lst):
-    return sum(lst[:4]), scores[4]
+    return sum(lst[:4]), lst[4]
 
 
 def solution():
