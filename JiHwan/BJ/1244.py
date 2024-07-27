@@ -1,31 +1,32 @@
-def change(idx):
-    if light[idx] == 0:
-        light[idx] = 1
+def change(num):
+    if switch[num] == 0:
+        switch[num] = 1
     else:
-        light[idx] = 0
+        switch[num] = 0
+    return
 
 
-n = int(input())
-
-light = list(map(int, input().split()))
-st_num = int(input())
-
-for st in range(st_num):
-    gen, num = map(int, input().split())
-
-    if gen == 1:
-        for i in range(1, n + 1):
-            if i % num == 0:
-                change(i - 1)
+N = int(input())
+switch = [-1] + list(map(int, input().split()))
+students = int(input())
+for _ in range(students):
+    sex, num = map(int, input().split())
+    # 남자
+    if sex == 1:
+        for i in range(num, N + 1, num):
+            change(i)
+    # 여자
     else:
-        idx = num - 1
-        i = 1
-        change(idx)
-        while num - i >= 1 and num + i <= n:
-            if light[idx - i] == light[idx + i]:
-                change(idx - i)
-                change(idx + i)
+        change(num)
+        for k in range(N // 2):
+            if num + k > N or num - k < 1: break
+            if switch[num + k] == switch[num - k]:
+                change(num + k)
+                change(num - k)
             else:
                 break
-            i += 1
-print(*light)
+
+for i in range(1, N + 1):
+    print(switch[i], end=" ")
+    if i % 20 == 0:
+        print()
