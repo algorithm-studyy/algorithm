@@ -1,31 +1,32 @@
-from itertools import permutations
+# 백트래킹 (Python3 통과, PyPy3도 통과)
+import sys
 
-n = int(input())
-a = list(map(int, input().split()))
-operator = ['+', '-', '*', '/']
-num_operator = list(map(int, input().split()))
-operation = [op for op, num in zip(operator, num_operator) for _ in range(num) if num != 0]
+input = sys.stdin.readline
+N = int(input())
+num = list(map(int, input().split()))
+op = list(map(int, input().split()))  # +, -, *, //
 
-max_num, min_num = -1e9, 1e9
+maximum = -1e9
+minimum = 1e9
 
-for case in permutations(operation, n - 1):
-    total = a[0]
-    for i in range(1, n):
-        if case[i - 1] == '+':
-            total += a[i]
-        elif case[i - 1] == '-':
-            total -= a[i]
-        elif case[i - 1] == '*':
-            total *= a[i]
-        elif case[i - 1] == '/':
-            if total < 0:
-                total = int(abs(total)/a[i])
-            else:
-                total = int(total / a[i])
 
-    if total > max_num:
-        max_num = total
-    if total < min_num:
-        min_num = total
-print(max_num)
-print(min_num)
+def dfs(depth, total, plus, minus, multiply, divide):
+    global maximum, minimum
+    if depth == N:
+        maximum = max(total, maximum)
+        minimum = min(total, minimum)
+        return
+
+    if plus:
+        dfs(depth + 1, total + num[depth], plus - 1, minus, multiply, divide)
+    if minus:
+        dfs(depth + 1, total - num[depth], plus, minus - 1, multiply, divide)
+    if multiply:
+        dfs(depth + 1, total * num[depth], plus, minus, multiply - 1, divide)
+    if divide:
+        dfs(depth + 1, int(total / num[depth]), plus, minus, multiply, divide - 1)
+
+
+dfs(1, num[0], op[0], op[1], op[2], op[3])
+print(maximum)
+print(minimum)
