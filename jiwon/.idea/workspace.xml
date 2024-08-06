@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2" />
+    <list default="true" id="0a838151-da8f-4432-9075-a9f9124d1133" name="Changes" comment="숨바꼭질2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,6 +286,8 @@
       <workItem from="1716035008667" duration="598000" />
       <workItem from="1721303015977" duration="1303000" />
       <workItem from="1721697207627" duration="569000" />
+      <workItem from="1721783572093" duration="1752000" />
+      <workItem from="1721894371618" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="약수 구하기">
       <option name="closed" value="true" />
@@ -663,6 +667,14 @@
     },
     {
       "branch": "algo",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "main",
+      "currentBranchFilter": true
+    },
+    {
+      "branch": "main",
       "currentBranchFilter": true
     },
     {
