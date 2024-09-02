@@ -5,7 +5,7 @@ if __name__ == "__main__":
         dp[i] += dp[i - 2]
     for i in range(3, 10001):
         dp[i] += dp[i - 3]
-
+    print(dp)
     for _ in range(t):
         n = int(input())
         print(dp[n])
