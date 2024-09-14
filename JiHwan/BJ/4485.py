@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def bfs(i, j, arr, costs):
     q = deque()
     q.append((i, j))
