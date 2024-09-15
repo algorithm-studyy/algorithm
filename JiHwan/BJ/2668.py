@@ -1,5 +1,5 @@
 # enumerate를 이용하여
-
+# dfs로 다시 풀이
 if __name__ == "__main__":
     n = int(input())
     answer = []
