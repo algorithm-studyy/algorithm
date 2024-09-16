@@ -1,22 +1,33 @@
-# enumerate를 이용하여
-# dfs로 다시 풀이
-if __name__ == "__main__":
-    n = int(input())
-    answer = []
-    arr = [0] * (n + 1)
+import sys
+from collections import defaultdict
 
-    for i in range(1, n + 1):
-        arr[i] = int(input())
+sys.setrecursionlimit(10 ** 6)
 
-    for idx, value in enumerate(arr):
-        if idx != 0:
-            if idx == value:
-                answer.append(idx)
-            elif idx not in answer:
 
-                if idx == arr[value]:
-                    answer.append(idx)
-                    answer.append(value)
-    print(len(answer))
-    for i in sorted(answer):
-        print(i)
+def dfs(u, visited):
+    visited.add(u)
+    checked[u] = 1
+    for v in g[u]:
+        if v not in visited:
+            dfs(v, visited.copy())
+        else:  # 사이클이 생기면 뽑는다.
+            result.extend(list(visited))
+            return
+
+
+n = int(sys.stdin.readline().strip())
+g = defaultdict(list)
+for i in range(1, n + 1):
+    v = int(sys.stdin.readline().strip())
+    g[v].append(i)
+
+checked = [0 for _ in range(n + 1)]
+result = []
+for i in range(1, n + 1):
+    if not checked[i]:
+        dfs(i, set([]))
+
+result.sort()
+print(len(result))
+for x in result:
+    print(x)
