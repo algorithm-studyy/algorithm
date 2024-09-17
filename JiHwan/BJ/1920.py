@@ -12,7 +12,7 @@ if __name__ == "__main__":
             mid = (lt + rt) // 2
 
             if A[mid] == b:
-                isExist = True
+                isExist = True11
                 print(1)
                 break
             elif A[mid] > b:
