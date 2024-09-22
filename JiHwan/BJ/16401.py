@@ -6,7 +6,6 @@ if __name__ == "__main__":
     answer = 0
     while start <= end:
         mid = (start + end) // 2
-
         cnt = 0
 
         for l in L:
